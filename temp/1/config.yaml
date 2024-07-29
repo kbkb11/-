@@ -1,0 +1,2 @@
+platformVersion: '12.0'  # 或者你使用的 Android 版本，如 '8.0', '9.0', 等
+XML_DIR: 'xml_files'  # 相对路径，也可以使用绝对路径，如 '/home/user/xml_files'
