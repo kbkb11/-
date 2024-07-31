@@ -203,9 +203,9 @@ def main():
     # dy_task_advance()
 
     while True:
-        dy_task_open_liveStream_box()
-        time.sleep(3*60+10)
-        # dy_keep_account_lookShortVideo(10)
+        # dy_task_open_liveStream_box()
+        # time.sleep(3*60+10)
+        dy_keep_account_lookShortVideo(10)
 
         # dy_task_open_daily_box()
         # time.sleep(random.uniform(0.8, 1.2) * 4)

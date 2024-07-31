@@ -29,7 +29,8 @@ data = {
 
 # 你的多个 Qm-User-Token
 qm_user_tokens = [
-    'kxvT2klmhlTvD8TYPmrlpZ-Mj44XPop23u9t9dEyQlZXIN19QOyVv_uciSazdv_h'
+    'i9cOtBfFJ0PtpiFfrqmeGLzRwj3t5uU8dOHM1azftdhUX2kI3tTNC8XEN4cmK287',
+    'FqkDZk6fvtL9QQVbeJ_YSQIZAHWZviAWu5R1le7rnrOg5g2RyRLeynd2GzWP7eES'
 ]
 
 
@@ -38,7 +39,7 @@ def sign():
     url = 'https://webapi2.qmai.cn/web/cmk-center/sign/takePartInSign'
 
     for token in qm_user_tokens:
-        time.sleep(random.uniform(2, 3))
+        time.sleep(random.uniform(5, 10))
         headers = headers_template.copy()
 
         headers["Content-Length"] = '64'

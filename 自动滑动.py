@@ -3,7 +3,7 @@ import random
 
 from tools.adb import swipe, tap
 
-AD_WAIT_TIME = 3
+AD_WAIT_TIME = 3*60
 tap1 = False
 sum_swipe = 0
 

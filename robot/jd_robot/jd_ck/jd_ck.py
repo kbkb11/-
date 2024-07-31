@@ -153,8 +153,7 @@ def get_cookies(driver):
     """获取Cookies"""
     try:
         cookies = driver.get_cookies()
-        for cookie in cookies:
-            print(f"{cookie['name']}={cookie['value']}")
+        print(cookies)
     except Exception as e:
         print(f"Error getting cookies: {e}")
 
@@ -167,8 +166,11 @@ def main(username, password):
 
     try:
         login_jd(driver, username, password)
-        handle_slider(driver)
+        time.sleep(20)
+        # handle_slider(driver)
         get_cookies(driver)
+
+        time.sleep(1000)
     finally:
         # 关闭WebDriver
         driver.quit()
@@ -176,6 +178,6 @@ def main(username, password):
 
 if __name__ == "__main__":
     # 在这里替换为您的京东用户名和密码
-    username = 'your_jd_username'
-    password = 'your_jd_password'
+    username = '18779901558'
+    password = 'yhp0825sx'
     main(username, password)
