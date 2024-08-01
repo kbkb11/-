@@ -89,6 +89,31 @@ def jrtt_advance():
         swipe((425, 1315), (425, 681), random.uniform(0.3, 0.5))
         print(f"进入下一次广告任务，本次花费{time.time() - start_time}秒")
 
+def jrtt_readRandomPaper():
+    '''随机搜'''
+    # 点击“随即搜”按钮
+    tap_text_center_on_screen("随机搜", 2, 2, device)
+
+    for i in range(30):
+        print(f"正在阅读第{i + 1}次")
+        for j in range(6):
+            # 下移
+            swipe((random.uniform(458, 512), random.uniform(1500, 1620)),
+                  (random.uniform(777, 888), random.uniform(600, 800)),
+                  random.uniform(0.42, 0.96)
+                  )
+            time.sleep(random.uniform(4.42, 4.96))
+
+        time.sleep(random.uniform(2.42, 5.96))
+
+        swipe_direction(4)
+        time.sleep(random.uniform(1.42, 1.96))
+
+        # 点击“随即搜”按钮
+        tap_text_center_on_screen("随机搜", 2, 2, device)
+
+
+
 
 def main():
     """主函数"""
@@ -96,6 +121,7 @@ def main():
     device = adb.device()  # 获取连接的设备
 
     while True:
+        # jrtt_readRandomPaper()
         jrtt_advance()
 
 

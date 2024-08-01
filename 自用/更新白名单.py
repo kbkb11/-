@@ -11,8 +11,8 @@ import os
 # JULIANG_TRADE_NO = ''  # 填入巨量的业务编号
 # XK_APIKEY = ''  # 填入星空的 API Key
 # XK_SIGN = ''  # 填入星空的 Sign
-# XIEQU_UID = ''  # 填入携趣的 UID，获取地址 https://www.xiequ.cn/redirect.aspx?act=MyIpWhiteList.aspx
-# XIEQU_UKEY = ''  # 填入携趣的 UKEY
+# XIEQU_UID = '144288'  # 填入携趣的 UID，获取地址 https://www.xiequ.cn/redirect.aspx?act=MyIpWhiteList.aspx
+# XIEQU_UKEY = '7383ADCDFB3F82703BD476A6DF005EBD'  # 填入携趣的 UKEY
 # YYY_UID = ''  # 填入优亦云的用户套餐ID
 # YYY_TOKEN = ''  # 填入优亦云的TOKEN
 # 巨量
@@ -22,8 +22,8 @@ JULIANG_TRADE_NO = ''
 XK_APIKEY = ''
 XK_SIGN = ''
 # 携趣
-XIEQU_UID = ''
-XIEQU_UKEY = ''
+XIEQU_UID = '144288'
+XIEQU_UKEY = '7383ADCDFB3F82703BD476A6DF005EBD'
 # 优亦云
 YYY_UID = ''
 YYY_TOKEN = ''
