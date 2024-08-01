@@ -1,142 +1,122 @@
-# -*- coding: utf-8 -*-
-#!/usr/bin/env python3
-"""
-* 仅供学习交流，请在下载后的24小时内完全删除 请勿将任何内容用于商业或非法目的，否则后果自负。
-* 巨量ip签到。每日签到领取1000免费IP
-* 巨量ip注册地址  https://www.juliangip.com/user/reg?inviteCode=1031551
-*token获取平台：http://www.gxfc-s4.com/
-*有问题联系3288588344
-*频道：https://pd.qq.com/s/672fku8ge
-#!/usr/bin/env python3
-"""
-# # # # # # # # # # #
-
-import json
-import re
+# cron: 10 */2 * * *
+# new Env('更新IP代理白名单');
 
 import requests
-import urllib3
-from urllib3.exceptions import InsecureRequestWarning
-
-urllib3.disable_warnings(InsecureRequestWarning)
-token = "填写token"
-username = "填入你的巨量账号"
-password = "填入你的巨量密码"
-
-def jl_login(username, password):
-    url = "https://www.juliangip.com/login/go"
-    payload = f'type=password&username={username}&password={password}&sms_code='
-    headers = {
-        'Accept': 'application/json, text/javascript, */*; q=0.01',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'Origin': 'https://www.juliangip.com',
-        'Referer': 'https://www.juliangip.com/user/login',
-        'Sec-Ch-Ua': '"Microsoft Edge";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.43',
-        'X-Requested-With': 'XMLHttpRequest'
-    }
-
-    response = requests.request("POST", url, headers=headers, data=payload, verify=False)
-    if response.status_code == 200:
-        return "_JSID=" + response.cookies.get("_JSID")
-    return None
+import hashlib
+import urllib.parse
+import os
 
 
-def jl_users(tk):
-    url = "https://www.juliangip.com/users/"
-    headers = {
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Sec-Ch-Ua': '"Microsoft Edge";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        "Cookie": tk,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.43',
-    }
-    response = requests.get(url, headers=headers, verify=False)
-    if response.status_code == 200:
-        return re.findall("const tx =new TencentCaptcha\('(\d+)'", response.text)
-    return []
+# JULIANG_KEY = ''  # 填入巨量的API密钥，点击设置授权信息按钮查看，获取地址 https://www.juliangip.com/users/product/time
+# JULIANG_TRADE_NO = ''  # 填入巨量的业务编号
+# XK_APIKEY = ''  # 填入星空的 API Key
+# XK_SIGN = ''  # 填入星空的 Sign
+# XIEQU_UID = ''  # 填入携趣的 UID，获取地址 https://www.xiequ.cn/redirect.aspx?act=MyIpWhiteList.aspx
+# XIEQU_UKEY = ''  # 填入携趣的 UKEY
+# YYY_UID = ''  # 填入优亦云的用户套餐ID
+# YYY_TOKEN = ''  # 填入优亦云的TOKEN
+# 巨量
+JULIANG_KEY = ''
+JULIANG_TRADE_NO = ''
+# 星空
+XK_APIKEY = ''
+XK_SIGN = ''
+# 携趣
+XIEQU_UID = ''
+XIEQU_UKEY = ''
+# 优亦云
+YYY_UID = ''
+YYY_TOKEN = ''
+
+# 青龙环境变量（若上面不填写，则读取青龙环境变量）
+JULIANG_KEY = JULIANG_KEY if JULIANG_KEY else os.getenv("JULIANG_KEY")
+JULIANG_TRADE_NO = JULIANG_TRADE_NO if JULIANG_TRADE_NO else os.getenv("JULIANG_TRADE_NO")
+XK_APIKEY = XK_APIKEY if XK_APIKEY else os.getenv("XK_APIKEY")
+XK_SIGN = XK_SIGN if XK_SIGN else os.getenv("XK_SIGN")
+XIEQU_UID = XIEQU_UID if XIEQU_UID else os.getenv("XIEQU_UID")
+XIEQU_UKEY = XIEQU_UKEY if XIEQU_UKEY else os.getenv("XIEQU_UKEY")
+YYY_UID = YYY_UID if YYY_UID else os.getenv("YYY_UID")
+YYY_TOKEN = YYY_TOKEN if YYY_TOKEN else os.getenv("YYY_TOKEN")
 
 
-def getcode(aid):
-    url = "http://119.96.239.11:8888/api/getcode"
-    headers = {
-        "Content-Type": "application/json"
-    }
-    data = {
-        "timeout": "90",  # 超时时间 请确保http请求超时>该参数，否则识别成功但连接已断开失败
-        "type": "tencent-turing",  # 类型
-        "appid": aid,  # 抓包所得aid/appid/id参数  tencent[aid/appid]  netease[id]
-        "token": token,  # 用户token 用于识别区分用户
-        "developeraccount": ""  # 软件开发者用户名 //可空
-    }
-    response = requests.post(url, headers=headers, verify=False, timeout=90, data=json.dumps(data))
-    if response.status_code == 200:
-        if response.json()['status'] == 200:
-            return response.json()
+
+
+class SignKit:
+
+    @staticmethod
+    def md5_sign(params, secret):
+        sign_content = SignKit.get_sign_content(params)
+        return hashlib.md5((sign_content + '&key=' + secret).encode('utf-8')).hexdigest()
+
+    @staticmethod
+    def get_sign_content(params):
+        params.pop('sign', None)  # 删除 sign
+        sorted_params = sorted(params.items())
+        sign_content = '&'.join([f"{k}={str(v)}" for k, v in sorted_params if str(v) is not None and not str(v).startswith('@')])
+        return sign_content
+
+def get_current_ip():
+    response = requests.get('https://myip.ipip.net/json')
+    data = response.json()
+    return data['data']['ip']
+
+def update_juliang_white_list(ip, JULIANG_KEY, JULIANG_TRADE_NO):
+    if JULIANG_KEY and JULIANG_TRADE_NO:
+        params = {
+            'new_ip': ip,
+            'reset': '1',
+            'trade_no': JULIANG_TRADE_NO
+        }
+        sign = SignKit.md5_sign(params, JULIANG_KEY)
+        query_string = urllib.parse.urlencode(params) + "&sign=" + sign
+
+        url = f'http://v2.api.juliangip.com/dynamic/replaceWhiteIp?{query_string}'
+        response = requests.get(url)
+        return response.text
+
+def update_xk_white_list(ip, XK_APIKEY, XK_SIGN):
+    if XK_APIKEY and XK_SIGN:
+        url = f'http://api2.xkdaili.com/tools/XApi.ashx?apikey={XK_APIKEY}&type=addwhiteip&sign={XK_SIGN}&flag=8&ip={ip}'
+        response = requests.get(url)
+        return response.text
+
+def update_xiequ_white_list(ip, XIEQU_UID, XIEQU_UKEY):
+    if XIEQU_UID and XIEQU_UKEY:
+        url = f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=get'
+        response = requests.get(url)
+        data = response.text
+        arr = data.split(',')
+        if ip not in arr:
+            requests.get(f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=del&ip=all')
+            response = requests.get(f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=add&ip={ip}')
+            return '更新xiequ白名单成功' if response.status_code == 200 else '更新xiequ白名单出错'
         else:
-            print(response.json())
-            return {}
-    return {}
+            return '携趣白名单ip未变化'
 
-
-def getFree(tk, js):
-    headers = {
-        "Host": "www.juliangip.com",
-        "Cookie": tk,
-        "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
-        "accept": "*/*",
-        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "x-requested-with": "XMLHttpRequest",
-        "sec-ch-ua-mobile": "?0",
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.43",
-        "sec-ch-ua-platform": "\"Windows\"",
-        "origin": "https://www.juliangip.com",
-        "sec-fetch-site": "same-origin",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-dest": "empty",
-        "referer": "https://www.juliangip.com/users/",
-        "accept-language": "zh-CN,zh;q=0.9"
-    }
-    data_js = json.loads(js['data']['code'])
-    data = {
-        "randStr": data_js['randstr'],
-        "ticket": data_js["ticket"]
-    }
-    url = "https://www.juliangip.com/users/getFree"
-    response = requests.post(url, headers=headers, data=data,
-                             verify=False)  # 注意：verify=False 用于禁用SSL验证，如果需要SSL验证，请删除这个参数
-    if response.status_code == 200:
-        print(response.json())
-    else:
-        print(response.text)
+def update_yyy_white_list(ip, YYY_UID, YYY_TOKEN):
+    if YYY_UID and YYY_TOKEN:
+        url = f'http://data.yyyip.cn:88/whiteip_api?method=list&token={YYY_TOKEN}'
+        response = requests.get(url)
+        data = response.json()
+        arr = [d["ip"] for d in data['data']]
+        ipstr = ','.join(map(str, arr))
+        if ip not in arr:
+            requests.get(f'http://data.yyyip.cn:88/whiteip_api?method=del&token={YYY_TOKEN}&ip={ipstr}')
+            response = requests.get(f'http://data.yyyip.cn:88/whiteip_api?method=add&token={YYY_TOKEN}&upackid={YYY_UID}&ip={ip}')
+            return response.json()['msg']
+            # return '更新优亦云白名单成功' if response.status_code == 200 else '更新优亦云白名单出错'
+        else:
+            return '优亦云白名单ip未变化'
 
 
 def main():
-    tk = jl_login(username, password)
-    if not tk:
-        print("登录失败")
-        return
-    aid = jl_users(tk)
-    if not aid:
-        print("获取aid失败")
-        return
-    js = getcode(aid[0])
-    if not js:
-        print("获取打码平台失败")
-        return
-    getFree(tk, js)
+    ip = get_current_ip()
+    print('当前ip地址：', ip)
 
+    print('更新巨量白名单结果：', update_juliang_white_list(ip, JULIANG_KEY, JULIANG_TRADE_NO))
+    print('更新星空白名单结果：', update_xk_white_list(ip, XK_APIKEY, XK_SIGN))
+    print('更新携趣白名单结果：', update_xiequ_white_list(ip, XIEQU_UID, XIEQU_UKEY))
+    print('更新优亦云白名单结果：', update_yyy_white_list(ip, YYY_UID, YYY_TOKEN))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
