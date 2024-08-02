@@ -13,6 +13,7 @@ device = None
 
 
 def jrtt_readHotPaper():
+    """热点阅读"""
     # 点击阅读
     tap(191, 672)
     time.sleep(random.uniform(1.42, 1.96))
@@ -30,6 +31,7 @@ def jrtt_readHotPaper():
 
 
 def jrtt_read(times):
+    """阅读"""
     # 随机次数
     times = random.randint(times - 1, times + 3)
 
@@ -59,15 +61,15 @@ def jrtt_advance():
 
         center = find_text_center(text_data, "广告", 2400, 1, 1)
         if center:
-            print(f"处于广告页面,再次等待{wait_time+15}秒")
-            time.sleep(wait_time+15)
+            print(f"处于广告页面,再次等待{wait_time + 15}秒")
+            time.sleep(wait_time + 15)
 
         print(text_data)
 
         text = ["点击", "领取"]
         for i in range(len(text)):
             center = find_text_center(text_data, text[i], 2400, 1, 1)
-            if center:
+            if center and center[0] < 400 and center[1] < 800:
                 print("找到点击领取,坐标为：", center)
                 tap(center[0], center[1])
                 time.sleep(random.uniform(1.42, 1.96))
@@ -89,10 +91,11 @@ def jrtt_advance():
         swipe((425, 1315), (425, 681), random.uniform(0.3, 0.5))
         print(f"进入下一次广告任务，本次花费{time.time() - start_time}秒")
 
+
 def jrtt_readRandomPaper():
-    '''随机搜'''
+    """随机搜"""
     # 点击“随即搜”按钮
-    tap_text_center_on_screen("随机搜", 2, 2, device)
+    tap_text_center_on_screen("随机搜", 1, 1, device)
 
     for i in range(30):
         print(f"正在阅读第{i + 1}次")
@@ -113,16 +116,14 @@ def jrtt_readRandomPaper():
         tap_text_center_on_screen("随机搜", 2, 2, device)
 
 
-
-
 def main():
     """主函数"""
     global device
     device = adb.device()  # 获取连接的设备
 
     while True:
-        # jrtt_readRandomPaper()
-        jrtt_advance()
+        jrtt_readRandomPaper()
+        # jrtt_advance()
 
 
 if __name__ == "__main__":
