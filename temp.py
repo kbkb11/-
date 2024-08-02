@@ -79,7 +79,7 @@ data = {
 
 payload = urlencode(data)
 
-# response = requests.post(url, headers=headers, data=payload)
+# response = requests.post(url, headers=headers, message=payload)
 #
 # print(response.text)
 

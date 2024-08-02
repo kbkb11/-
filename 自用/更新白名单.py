@@ -58,7 +58,7 @@ class SignKit:
 def get_current_ip():
     response = requests.get('https://myip.ipip.net/json')
     data = response.json()
-    return data['data']['ip']
+    return data['message']['serverIp']
 
 def update_juliang_white_list(ip, JULIANG_KEY, JULIANG_TRADE_NO):
     if JULIANG_KEY and JULIANG_TRADE_NO:
@@ -76,7 +76,7 @@ def update_juliang_white_list(ip, JULIANG_KEY, JULIANG_TRADE_NO):
 
 def update_xk_white_list(ip, XK_APIKEY, XK_SIGN):
     if XK_APIKEY and XK_SIGN:
-        url = f'http://api2.xkdaili.com/tools/XApi.ashx?apikey={XK_APIKEY}&type=addwhiteip&sign={XK_SIGN}&flag=8&ip={ip}'
+        url = f'http://api2.xkdaili.com/tools/XApi.ashx?apikey={XK_APIKEY}&type=addwhiteip&sign={XK_SIGN}&flag=8&serverIp={ip}'
         response = requests.get(url)
         return response.text
 
@@ -87,8 +87,8 @@ def update_xiequ_white_list(ip, XIEQU_UID, XIEQU_UKEY):
         data = response.text
         arr = data.split(',')
         if ip not in arr:
-            requests.get(f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=del&ip=all')
-            response = requests.get(f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=add&ip={ip}')
+            requests.get(f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=del&serverIp=all')
+            response = requests.get(f'http://op.xiequ.cn/IpWhiteList.aspx?uid={XIEQU_UID}&ukey={XIEQU_UKEY}&act=add&serverIp={ip}')
             return '更新xiequ白名单成功' if response.status_code == 200 else '更新xiequ白名单出错'
         else:
             return '携趣白名单ip未变化'
@@ -98,11 +98,11 @@ def update_yyy_white_list(ip, YYY_UID, YYY_TOKEN):
         url = f'http://data.yyyip.cn:88/whiteip_api?method=list&token={YYY_TOKEN}'
         response = requests.get(url)
         data = response.json()
-        arr = [d["ip"] for d in data['data']]
+        arr = [d["serverIp"] for d in data['message']]
         ipstr = ','.join(map(str, arr))
         if ip not in arr:
-            requests.get(f'http://data.yyyip.cn:88/whiteip_api?method=del&token={YYY_TOKEN}&ip={ipstr}')
-            response = requests.get(f'http://data.yyyip.cn:88/whiteip_api?method=add&token={YYY_TOKEN}&upackid={YYY_UID}&ip={ip}')
+            requests.get(f'http://data.yyyip.cn:88/whiteip_api?method=del&token={YYY_TOKEN}&serverIp={ipstr}')
+            response = requests.get(f'http://data.yyyip.cn:88/whiteip_api?method=add&token={YYY_TOKEN}&upackid={YYY_UID}&serverIp={ip}')
             return response.json()['msg']
             # return '更新优亦云白名单成功' if response.status_code == 200 else '更新优亦云白名单出错'
         else:

@@ -89,7 +89,7 @@ def handle_slider(driver):
         cpc_img_src = cpc_img.get_attribute('src')
         small_img_src = small_img.get_attribute('src')
 
-        # 去掉前缀 'data:image/png;base64,'
+        # 去掉前缀 'message:image/png;base64,'
         cpc_img_base64 = cpc_img_src.split(',')[1]
         small_img_base64 = small_img_src.split(',')[1]
 

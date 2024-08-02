@@ -70,7 +70,7 @@ def querySignRecord(token):
 
     try:
         response_json = response.json()
-        calculate_consecutive_days(response_json['data']['signDateList'])
+        calculate_consecutive_days(response_json['message']['signDateList'])
     except ValueError:
         print("签到记录 Response Content:", response.text)
 

@@ -69,7 +69,7 @@ def queryReward(token):
 
     try:
         response_json = response.json()
-        points = response_json['data']
+        points = response_json['message']
         print(f"当前积分为：{points}")
     except ValueError:
         print("Response Content:", response.text)
@@ -94,7 +94,7 @@ def querySignRecord(token):
 
     try:
         response_json = response.json()
-        calculate_consecutive_days(response_json['data']['signDateList'])
+        calculate_consecutive_days(response_json['message']['signDateList'])
     except ValueError:
         print("签到记录 Response Content:", response.text)
 

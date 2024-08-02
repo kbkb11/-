@@ -155,7 +155,7 @@ for cookies, data in zip(cookies_list, data_list):
     headers['Cookie'] = '; '.join([f"{key}={value}" for key, value in cookies.items()])
     headers['X-Forwarded-For'] = get_new_ip()
 
-    # 扁平化 data 字典
+    # 扁平化 message 字典
     flattened_data = {
         "appid": data['appid'],
         "body": json.dumps(data['body']),  # 将嵌套的字典转换为 JSON 字符串
