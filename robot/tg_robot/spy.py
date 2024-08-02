@@ -20,8 +20,8 @@ forward_keywords = ['export', 'http']
 
 # tg转发群和青龙配置
 log_channel_id = -4226546044
-config_file_path = (r'\\wsl.localhost\docker-desktop-data\data\docker\volumes'
-                    r'\b97a90379f53757dbef58f27791154e3db4afd5c98ba455a64a8a10f7d1bf64d\_data\config\config.sh')
+config_file_path = (r'\\wsl.localhost\docker-desktop-message\message\docker\volumes'
+                    r'\b97a90379f53757dbef58f27791154e3db4afd5c98ba455a64a8a10f7d1bf64d\_message\config\config.sh')
 
 # 创建 Telegram 客户端
 client = TelegramClient('session_name', api_id, api_hash,

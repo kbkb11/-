@@ -17,7 +17,7 @@ def get_ql_token():
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data.get("data").get("token")
+        return data.get("message").get("token")
     else:
         print(f"获取Token失败: {response.json()}")
         return None
@@ -30,7 +30,7 @@ def get_existing_envs(token):
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
-        return response.json().get("data", [])
+        return response.json().get("message", [])
     else:
         print(f"获取现有环境变量失败: {response.json()}")
         return []
@@ -76,7 +76,7 @@ def get_existing_envs(token):
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
-        return response.json().get("data", [])
+        return response.json().get("message", [])
     else:
         print(f"获取现有环境变量失败: {response.json()}")
         return []
