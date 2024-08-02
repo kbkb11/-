@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "chinaTelecomAccount",
+        "remarks": null,
+        "value": "19062891408#030825"
+    },
+    {
+        "id": 5,
+        "name": "sfsyBee",
+        "remarks": null,
+        "value": "true"
+    },
+    {
+        "id": 2,
+        "name": "sfsyUrl",
+        "remarks": null,
+        "value": "https://mcs-mimp-web.sf-express.com/mcs-mimp/share/weChat/shareGiftReceiveRedirect?source=CX&scene=6&openId=04%2FPdKox6ve3g2w3AMdHpWIe0J7encWeDDXnwRRnY0W%3d&MEMiD=H3w86L7oBbAea4NcmH7OQxLhzVBhimykK%2b2JfpUrs4ydDJsR%2f6x0wOIzTGgZS7Sg&MEMnO=6Tb15t6K0zVYROdmChjM6upjSWiXSNQBs7ZJB%2b%2fyIq8dDJsR2f6x0wOIzTGgZS7Sg&MOBILE=SyzTgi6y4PrSa69yy%2b0dYG%3d%3d&BIZcODE=622&MEIAcODE=WXAPP"
+    },
+    {
+        "id": 3,
+        "name": "bwcjCookie",
+        "remarks": null,
+        "value": "epF8Bt96Vrc66HLwJdjkX10u_ML_uijlumNVouLaBhEzGuFodfjnlq0M6aIsgWBg@uMP4h1sGRuIaVqrhlQ48bZTOfHWJjf8atrhzqDWdorzs0ISHVSwAdMbIhNZQQ0tc"
+    },
+    {
+        "id": 4,
+        "name": "xclxCookie",
+        "remarks": null,
+        "value": "BFEF38101F4BA46C7EB310FBCC7383E6B67EE299CC49BA4615031F26A1AE3651"
+    },
+    {
+        "id": 6,
+        "name": "dtCookie",
+        "remarks": null,
+        "value": "9e5ca0c4-90f2-4195-8f90-bd1b97312aae"
+    },
+    {
+        "id": 7,
+        "name": "jd_dpqd_tokens",
+        "remarks": null,
+        "value": "E3F53E3A5791BB19EF5003E7CF245549\n8730FDB6AC82AC303305334B1FDAB7B6\n0BAF0448C0E38382F641430D455FE451\n1541AB9B2515FD36F40390B1B71F813D\n8C92320BC8EBE9E2B3BF0C12E34F3BD3\n9D17F0FA26542DF8EE150DF898538667\nB1C9EE60BC53D6387270C66934C633A2\nF8A8A69785E016CBDD94AECD856BEE22\n5282853C8B47659965A71B38F8A687FB\n1210735C4345F9469A3211E0D7FC33A1"
+    },
+    {
+        "id": 8,
+        "name": "JD_COOKIE",
+        "remarks": null,
+        "value": "pt_key=AAJmrDiGADC767nAyYZvXbS0zNmHLEOiGipjh8oCC6ZBcDmqFEkyyvlJzq2b0x4iXl_bXJ9fvUg; pt_pin=jd_7754e7ac4a5fa;\npt_key=AAJmqaCIADCkuaDMOLqpIeK2xE-Eez677DVJtqQxlmRKcebbJAoZW5CrU1J2jvMm_lgB0m2Knsk; pt_pin=jd_glkHpLfbpInk;"
+    },
+    {
+        "id": 9,
+        "name": "jd_lzkj_cart_url",
+        "remarks": "加购有礼链接",
+        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&activityId=1819208049773629442"
+    },
+    {
+        "id": 10,
+        "name": "jd_lzkj_cart_opencard",
+        "remarks": "加购有礼入会",
+        "value": "true"
+    },
+    {
+        "id": 11,
+        "name": "LUCK_DRAW_URL",
+        "remarks": "店铺抽奖",
+        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10026&templateId=20210518190900jfcj011&activityId=1818471058642911234"
+    },
+    {
+        "id": 12,
+        "name": "LUCK_DRAW_OPENCARD",
+        "remarks": "店铺抽奖入会",
+        "value": "true"
+    }
+]
