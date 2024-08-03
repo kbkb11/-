@@ -14,12 +14,12 @@ def parseMessage(config, message):
     解析消息，判断消息类型并进行相应处理。
 
     参数:
+        config (dict): 配置信息。
         message (str): 接收到的消息字符串。
 
     返回:
         str: 如果消息属于特定类型，则返回对应的字符串描述；否则返回 None。
     """
-
 
     # 使用正则表达式从消息中提取URL
     url_pattern = r'http[s]?://[^\s"]+'
@@ -32,8 +32,20 @@ def parseMessage(config, message):
         if res:
             return res
 
-        # TODO: 添加其他类型判断，如关注、抽奖、积分兑换
-        # 例如：res = followShop(url, envData)
+        # 判断是否为关注类
+        res = followShop(config, url)
+        if res:
+            return res
+
+        # 判断是否为抽奖类
+        res = lottery(config, url)
+        if res:
+            return res
+
+        # 判断是否为积分兑换类
+        res = exchangePoints(config, url)
+        if res:
+            return res
 
     return None
 
@@ -43,6 +55,7 @@ def addToPurchase(config, url):
     判断URL是否为加购有礼类型，并更新相应环境变量。
 
     参数:
+        config (dict): 配置信息。
         url (str): 提取到的URL。
 
     返回:
@@ -75,8 +88,17 @@ def addToPurchase(config, url):
     return None
 
 
-# TODO: 实现其他判断函数，例如：
 def followShop(config, url):
+    """
+    判断URL是否为关注店铺类型，并更新相应环境变量。
+
+    参数:
+        config (dict): 配置信息。
+        url (str): 提取到的URL。
+
+    返回:
+        str: 如果URL为关注店铺类型，则返回对应的字符串描述；否则返回 None。
+    """
     # 关键词列表，用于判断URL类型
     keywords = [
         ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10053&templateId=',
@@ -125,12 +147,79 @@ def followShop(config, url):
     return None
 
 
+def lottery(config, url):
+    """
+    判断URL是否为抽奖类型，并更新相应环境变量。
+
+    参数:
+        config (dict): 配置信息。
+        url (str): 提取到的URL。
+
+    返回:
+        str: 如果URL为抽奖类型，则返回对应的字符串描述；否则返回 None。
+    """
+    # 关键词列表，用于判断URL类型
+    keywords = [
+        ['https://lzkj-isv.isvjd.com/lzclient/<活动id>/cjwx/common/entry.html?activityId=',
+         'https://lzkj-isv.isvjd.com/wxDrawActivity/activity/activity?activityId=',
+         'https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity/activity?activityId='
+         ]
+    ]
+    for keyword_list in keywords:
+        for keyword in keyword_list:
+            if keyword in url:
+                # 店铺抽奖（超级无线/超级会员）
+                if keyword in keywords[0]:
+                    return update_env_variable(
+                        config,
+                        'LUCK_DRAW_URL',
+                        '店铺抽奖（超级无线/超级会员）',
+                        url
+                    )
+
+    return None
+
+
+# 积分兑换
+def exchangePoints(config, url):
+    """
+    判断URL是否为积分兑换类型，并更新相应环境变量。
+
+    参数:
+        config (dict): 配置信息。
+        url (str): 提取到的URL。
+
+    返回:
+        str: 如果URL为积分兑换类型，则返回对应的字符串描述；否则返回 None。
+    """
+    # 关键词列表，用于判断URL类型
+    keywords = [
+        ['https://cjhy-isv.isvjcloud.com/mc/wxPointShopView/pointExgBeans?venderId=',
+         ]
+    ]
+    for keyword_list in keywords:
+        for keyword in keyword_list:
+            if keyword in url:
+                # 积分兑换京豆（超级会员）
+                if keyword in keywords[0]:
+                    return update_env_variable(
+                        config,
+                        'jd_pointExgBeans_activityUrl',
+                        '积分兑换京豆（超级会员）',
+                        url
+                    )
+
+    return None
+
+
 def update_env_variable(config, name, variable_name, url):
     """
     更新指定的环境变量。
 
     参数:
-        variable_name (str): 要更新的环境变量名。
+        config (dict): 配置信息。
+        name (str): 环境变量的名称。
+        variable_name (str): 环境变量的描述信息。
         url (str): 新的URL值。
 
     返回:

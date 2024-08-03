@@ -1,2 +1,0 @@
-platformVersion: '12.0'  # 或者你使用的 Android 版本，如 '8.0', '9.0', 等
-XML_DIR: 'xml_files'
