@@ -185,7 +185,7 @@ def main():
         hg_switch_card()
 
 
-# def main():
+# def spy():
 #     global device
 #     device = adb.device()  # 获取连接的设备
 #

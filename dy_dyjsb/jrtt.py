@@ -122,8 +122,8 @@ def main():
     device = adb.device()  # 获取连接的设备
 
     while True:
-        jrtt_readRandomPaper()
-        # jrtt_advance()
+        # jrtt_readRandomPaper()
+        jrtt_advance()
 
 
 if __name__ == "__main__":
