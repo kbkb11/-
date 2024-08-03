@@ -20,6 +20,7 @@ def parseMessage(config, message):
         str: 如果消息属于特定类型，则返回对应的字符串描述；否则返回 None。
     """
 
+
     # 使用正则表达式从消息中提取URL
     url_pattern = r'http[s]?://[^\s"]+'
     match = re.search(url_pattern, message)
