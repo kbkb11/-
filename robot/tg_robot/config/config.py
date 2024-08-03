@@ -16,7 +16,7 @@ class ServerConfig:
         self.authorization = "Bearer " + updateAuthorization(self.serverIp)
         print(f"初始化完成，IP地址为：{self.serverIp}, 端口号为：{self.serverPort}, 授权码为：{self.authorization}")
 
-    def init(self):
+    def init_tasks(self):
         headers = {
             'Authorization': self.authorization,
             'Content-Type': 'application/json'
@@ -35,7 +35,8 @@ class ServerConfig:
                     "id": item.get("id"),
                     "name": item.get("name"),
                     "command": item.get("command"),
-                    "schedule": item.get("schedule")
+                    "schedule": item.get("schedule"),
+                    'status': item.get("status")
                 }
                 tasks_to_save.append(task_data)
             else:
@@ -45,8 +46,17 @@ class ServerConfig:
         output_file = cache_tasks_data
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(tasks_to_save, f, ensure_ascii=False, indent=4)
+        print("任务数据初始化完成")
 
-        # 获取环境变量数据
+    def init_envs(self):
+        headers = {
+            'Authorization': self.authorization,
+            'Content-Type': 'application/json'
+        }
+        data = {
+            "t": time.time()
+        }
+
         response = requests.get(f"http://{self.serverIp}:{self.serverPort}/open/envs", headers=headers, json=data)
         envs = response.json()['data']
         # 存储环境变量数据到本地 JSON 文件
@@ -67,8 +77,7 @@ class ServerConfig:
         output_file = cache_envs_data
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(envs_to_save, f, ensure_ascii=False, indent=4)
-
-        print("初始化json完成")
+        print("环境变量数据初始化完成")
 
     def updateJDSignIp(self):
         try:

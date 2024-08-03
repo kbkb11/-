@@ -75,13 +75,13 @@
         "id": 14,
         "name": "jd_wyw_turnnum",
         "remarks": null,
-        "value": "40"
+        "value": "30"
     },
     {
         "id": 15,
         "name": "jd_wyw_turnmax",
         "remarks": null,
-        "value": "1"
+        "value": "2"
     },
     {
         "id": 20,
@@ -99,7 +99,7 @@
         "id": 22,
         "name": "jd_wxCollectionActivity_activityUrl",
         "remarks": "加购有礼",
-        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&activityld=1814968732683837441&templateld=10021240605dzpcj02&nodeld=101001&prd=cjwx"
+        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10024&activityId=1819664250574262274&templateId=20210518190900jgyl011&nodeId=101001&prd=cjwx"
     },
     {
         "id": 43,
@@ -108,10 +108,16 @@
         "value": "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=7fa0593086f44191a78fd6cb575fe889"
     },
     {
-        "id": 46,
+        "id": 47,
+        "name": "jd_lzkj_lkFollowShop_url",
+        "remarks": "关注店铺有礼（超级无线）",
+        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10069&templateId=ac8b6564-aa35-4ba5-aa62-55b0ce61b5d01&activityId=1818587639804383233"
+    },
+    {
+        "id": 51,
         "name": "jd_pointExgBeans_activityUrl",
-        "remarks": "积分兑换京豆",
-        "value": "https://cjhy-isv.isvjcloud.com/mc/wxPointShopView/pointExgBeans?venderId=11388388&giftId=cf6bd5b4eb004a478c93f9603351ebc3"
+        "remarks": "积分兑换京豆（超级会员）",
+        "value": "https://cjhy-isv.isvjcloud.com/mc/wxPointShopView/pointExgBeans?venderId=1000003168&giftId=91dd1d0b5fe14be2b181dbe712ca2280"
     },
     {
         "id": 31,
@@ -140,12 +146,6 @@
     {
         "id": 42,
         "name": "jd_lzkj_cart_opencard",
-        "remarks": null,
-        "value": "true"
-    },
-    {
-        "id": 44,
-        "name": "jd_wxTeam_joinMember",
         "remarks": null,
         "value": "true"
     }

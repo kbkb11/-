@@ -5,7 +5,8 @@ import time
 
 import requests
 
-from robot.tg_robot.utils.readAndWrite import load_env_by_name
+from robot.tg_robot.config.constant import cache_tasks_data
+from robot.tg_robot.utils.readAndWrite import load_env_by_name, load_json
 
 # 客户端 ID 和客户端密钥
 client_id = "h_EAL1JJV92j"
@@ -130,10 +131,32 @@ def createEnv(config, name, remark, value):
         'Authorization': config.authorization,
         'Content-Type': 'application/json'
     }
-    data = {
-        "value": value,
-        "name": name,
-        "remarks": remark
-    }
+    data = [
+        {
+            "value": value,
+            "name": name,
+            "remarks": remark
+        }
+    ]
     response = requests.post(url, headers=headers, json=data)
     return response.json()['code']
+
+
+def calculateRunningTask(config):
+    """
+    计算正在运行的任务数量的函数。
+
+    参数:
+        config: 配置对象，包含服务器 IP 和端口信息
+
+    返回:
+        正在运行的任务数量
+    """
+    config.init_tasks()
+    tasks = load_json(cache_tasks_data)
+    sum = 0
+    for task in tasks:
+        if task['status'] == 0:
+            sum += 1
+
+    return sum

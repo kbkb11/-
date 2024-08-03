@@ -4,7 +4,7 @@ import time
 import requests
 
 from robot.tg_robot.config.constant import cache_envs_data
-from robot.tg_robot.utils.qlOpenApi import createEnv
+from robot.tg_robot.utils.qlOpenApi import createEnv, updateEnv
 from robot.tg_robot.utils.readAndWrite import load_json, update_env_by_name, load_env_by_name
 
 
@@ -18,7 +18,7 @@ def parseMessage(config, message):
         message (str): 接收到的消息字符串。
 
     返回:
-        str: 如果消息属于特定类型，则返回对应的字符串描述；否则返回 None。
+        json: 如果消息属于特定类型，则返回对应的字符串描述；否则返回 None。
     """
 
     # 使用正则表达式从消息中提取URL
@@ -59,7 +59,7 @@ def addToPurchase(config, url):
         url (str): 提取到的URL。
 
     返回:
-        str: 如果URL为加购有礼类型，则返回对应的字符串描述；否则返回 None。
+        json: 如果URL为加购有礼类型，则返回对应的字符串描述；否则返回 None。
     """
     # 关键词列表，用于判断URL类型
     keywords = [
@@ -79,12 +79,23 @@ def addToPurchase(config, url):
             if keyword in url:
                 # 加购有礼（超级无线）
                 if keyword in keywords[0]:
-                    return update_env_variable(config, 'jd_lzkj_cart_url', '加购有礼（超级无线）', url)
+                    return [
+                        config,
+                        'jd_lzkj_cart_url',
+                        '加购有礼（超级无线）',
+                        url,
+                        1
+                    ]
 
                 # 加购有礼（超级会员）
                 if keyword in keywords[1]:
-                    return update_env_variable(config, 'jd_wxCollectionActivity_activityUrl',
-                                               '加购有礼（超级无线/超级会员）', url)
+                    return [
+                        config,
+                        'jd_wxCollectionActivity_activityUrl',
+                        '加购有礼（超级无线/超级会员）',
+                        url,
+                        1
+                    ]
     return None
 
 
@@ -97,7 +108,7 @@ def followShop(config, url):
         url (str): 提取到的URL。
 
     返回:
-        str: 如果URL为关注店铺类型，则返回对应的字符串描述；否则返回 None。
+        json: 如果URL为关注店铺类型，则返回对应的字符串描述；否则返回 None。
     """
     # 关键词列表，用于判断URL类型
     keywords = [
@@ -120,30 +131,33 @@ def followShop(config, url):
             if keyword in url:
                 # 关注商品有礼（超级无线）
                 if keyword in keywords[0]:
-                    return update_env_variable(
+                    return [
                         config,
                         'jd_lzkj_followGoods_url',
                         '关注商品有礼（超级无线）',
-                        url
-                    )
+                        url,
+                        2
+                    ]
 
                 # 关注店铺有礼（超级无线/超级会员）
                 if keyword in keywords[1]:
-                    return update_env_variable(
+                    return [
                         config,
                         'jd_wxShopFollowActivity_activityUrl',
                         '关注店铺有礼（超级无线/超级会员）',
-                        url
-                    )
+                        url,
+                        2
+                    ]
 
                 # 关注店铺有礼（超级无线）
                 if keyword in keywords[2]:
-                    return update_env_variable(
+                    return [
                         config,
                         'jd_lzkj_lkFollowShop_url',
                         '关注店铺有礼（超级无线）',
-                        url
-                    )
+                        url,
+                        2
+                    ]
     return None
 
 
@@ -156,7 +170,7 @@ def lottery(config, url):
         url (str): 提取到的URL。
 
     返回:
-        str: 如果URL为抽奖类型，则返回对应的字符串描述；否则返回 None。
+        json: 如果URL为抽奖类型，则返回对应的字符串描述；否则返回 None。
     """
     # 关键词列表，用于判断URL类型
     keywords = [
@@ -170,12 +184,13 @@ def lottery(config, url):
             if keyword in url:
                 # 店铺抽奖（超级无线/超级会员）
                 if keyword in keywords[0]:
-                    return update_env_variable(
+                    return [
                         config,
                         'LUCK_DRAW_URL',
                         '店铺抽奖（超级无线/超级会员）',
-                        url
-                    )
+                        url,
+                        3
+                    ]
 
     return None
 
@@ -190,7 +205,7 @@ def exchangePoints(config, url):
         url (str): 提取到的URL。
 
     返回:
-        str: 如果URL为积分兑换类型，则返回对应的字符串描述；否则返回 None。
+        json: 如果URL为积分兑换类型，则返回对应的字符串描述；否则返回 None。
     """
     # 关键词列表，用于判断URL类型
     keywords = [
@@ -202,43 +217,12 @@ def exchangePoints(config, url):
             if keyword in url:
                 # 积分兑换京豆（超级会员）
                 if keyword in keywords[0]:
-                    return update_env_variable(
+                    return [
                         config,
                         'jd_pointExgBeans_activityUrl',
                         '积分兑换京豆（超级会员）',
-                        url
-                    )
+                        url,
+                        4
+                    ]
 
     return None
-
-
-def update_env_variable(config, name, variable_name, url):
-    """
-    更新指定的环境变量。
-
-    参数:
-        config (dict): 配置信息。
-        name (str): 环境变量的名称。
-        variable_name (str): 环境变量的描述信息。
-        url (str): 新的URL值。
-
-    返回:
-        str: 更新结果的描述信息。
-    """
-    print(f'开始更新: {variable_name} 变量')
-    # 加载当前的环境变量值
-    temp = load_env_by_name(name)
-
-    if temp is None:
-        createEnv(config, name, variable_name, url)
-        return None
-
-    temp['value'] = url
-    # 更新环境变量
-    res = update_env_by_name(name, temp)
-    if res['code'] == 200:
-        print('更新成功')
-        return variable_name
-    else:
-        print(f'更新失败,{res}')
-        return None
