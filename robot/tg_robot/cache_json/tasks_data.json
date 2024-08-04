@@ -199,7 +199,7 @@
         "id": 159,
         "name": "东东农场日常任务",
         "command": "task shufflewzc_faker3_main/jd_fruit_task.js",
-        "schedule": "15 6-18/6 * * *",
+        "schedule": "12 6-18/6 * * *",
         "status": 1
     },
     {
@@ -273,13 +273,6 @@
         "status": 1
     },
     {
-        "id": 83,
-        "name": "新版玩一玩翻翻乐",
-        "command": "task shufflewzc_faker3_main/jd_wyw_ffl.js",
-        "schedule": "27 10-19 * * *",
-        "status": 1
-    },
-    {
         "id": 68,
         "name": "特价-天天领红包",
         "command": "task shufflewzc_faker3_main/jd_tj_ttlhb.js",
@@ -343,6 +336,13 @@
         "status": 1
     },
     {
+        "id": 313,
+        "name": "批量店铺签到（活动查询）",
+        "command": "task 6dylan6_jdpro/jd_dpqd_main.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
         "id": 276,
         "name": "常规店铺签到监控",
         "command": "task shufflewzc_faker3_main/jd_dpqd_monitor.js",
@@ -354,6 +354,13 @@
         "name": "组队瓜分奖品（超级无线/超级会员）",
         "command": "task shufflewzc_faker3_main/jd_wxTeam.js",
         "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 258,
+        "name": "加购有礼（超级无线/超级会员）",
+        "command": "task shufflewzc_faker3_main/jd_wxCollectionActivity.js",
+        "schedule": "52 1 * * *",
         "status": 1
     },
     {
@@ -448,6 +455,13 @@
         "status": 1
     },
     {
+        "id": 83,
+        "name": "新版玩一玩翻翻乐",
+        "command": "task shufflewzc_faker3_main/jd_wyw_ffl.js",
+        "schedule": "48 10-19 * * *",
+        "status": 1
+    },
+    {
         "id": 69,
         "name": "逛视频任务",
         "command": "task shufflewzc_faker3_main/jd_video_task.js",
@@ -490,83 +504,6 @@
         "status": 1
     },
     {
-        "id": 629,
-        "name": "common.js",
-        "command": "task 3288588344_elm/common.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 628,
-        "name": "elm.sh",
-        "command": "task 3288588344_elm/elm.sh",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 627,
-        "name": "elmck,",
-        "command": "task 3288588344_elm/ql.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 626,
-        "name": "饿了么资产推送",
-        "command": "task 3288588344_elm/饿了么资产推送.js",
-        "schedule": "0 22 * * *",
-        "status": 1
-    },
-    {
-        "id": 625,
-        "name": "饿了么乐园币",
-        "command": "task 3288588344_elm/ele_lyb.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 624,
-        "name": "饿了么2048",
-        "command": "task 3288588344_elm/ele_2048.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 623,
-        "name": "饿了么乐成语闯关",
-        "command": "task 3288588344_elm/ele_cycg.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 622,
-        "name": "饿了么合成甜蜜蜜",
-        "command": "task 3288588344_elm/ele_hctmm.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 621,
-        "name": "sendNotify1.js",
-        "command": "task 3288588344_elm/sendNotify1.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 620,
-        "name": "饿了么美食摊",
-        "command": "task 3288588344_elm/ele_mst.js",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 619,
-        "name": "elm.py",
-        "command": "task 3288588344_elm/elm.py",
-        "schedule": "40 15 * * *",
-        "status": 1
-    },
-    {
         "id": 277,
         "name": "霸王茶姬",
         "command": "task 霸王茶姬.py",
@@ -602,11 +539,809 @@
         "status": 1
     },
     {
-        "id": 544,
-        "name": "茶百道",
-        "command": "task 茶百道.py",
-        "schedule": "30 0 7 * * *",
-        "status": 0
+        "id": 764,
+        "name": "完善有礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showPerfectInformation.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 763,
+        "name": "积分兑换红包（超级会员）",
+        "command": "task 6dylan6_jdm/jd_pointExgHb.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 762,
+        "name": "每日抢好礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_dailyGrabs.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 761,
+        "name": "关注商品有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_followGoods.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 760,
+        "name": "缓存IsvToken",
+        "command": "task 6dylan6_jdm/jd_cacheIsvToken.js",
+        "schedule": "0/25 * * * *",
+        "status": 1
+    },
+    {
+        "id": 759,
+        "name": "签到有礼（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_sign_in.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 758,
+        "name": "幸运抽奖（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_draw.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 757,
+        "name": "每日抢好礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_dailyGrabs.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 756,
+        "name": "积分兑换（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_pointsExchange.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 755,
+        "name": "组队瓜分奖品（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxTeam.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 754,
+        "name": "店铺抽奖-JK",
+        "command": "task 6dylan6_jdm/jd_dpcj.py",
+        "schedule": "1 1 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 753,
+        "name": "京东抽奖机通用-KR",
+        "command": "task 6dylan6_jdm/jd_lottery.js",
+        "schedule": "11 11 11 11 *",
+        "status": 1
+    },
+    {
+        "id": 752,
+        "name": "加购有礼（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxCollectionActivity.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 751,
+        "name": "关注店铺有礼（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxShopFollowActivity.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 750,
+        "name": "cjhy加购物车抽奖",
+        "command": "task 6dylan6_jdm/jd_cjhy_wxCollectionActivity.js",
+        "schedule": "1 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 749,
+        "name": "微定制瓜分京豆-加密",
+        "command": "task 6dylan6_jdm/jd_wdz.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 748,
+        "name": "关注店铺有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_lkFollowShop.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 747,
+        "name": "上上签抽奖（lzkj_loreal）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_upperSign.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 746,
+        "name": "加购有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_cart.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 745,
+        "name": "加购有礼（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_cart_item.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 744,
+        "name": "店铺礼包（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_shopGift.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 743,
+        "name": "PKC关注有礼-特效",
+        "command": "task 6dylan6_jdm/jd_txgzyl.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 742,
+        "name": "集卡有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxCollectCard.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 741,
+        "name": "店铺关注有礼",
+        "command": "task 6dylan6_jdm/jd_drawShopGift.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 740,
+        "name": "购物车锦鲤（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxCartKoi.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 739,
+        "name": "翻牌签到",
+        "command": "task 6dylan6_jdm/jd_sendbeans.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 738,
+        "name": "店铺礼包（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_shopGift.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 737,
+        "name": "签到抽奖（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_sign.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 736,
+        "name": "cjhy幸运抽大奖通用活动",
+        "command": "task 6dylan6_jdm/jd_cjhy_wxDrawActivity.js",
+        "schedule": "1 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 735,
+        "name": "LZ加购有礼通用活动",
+        "command": "task 6dylan6_jdm/jd_lzaddCart.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 734,
+        "name": "邀请关注店铺有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_inviteFollowShop.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 733,
+        "name": "积分兑换（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_exchangeActDetail.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 732,
+        "name": "加购有礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showCart.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 731,
+        "name": "joyjd通用开卡",
+        "command": "task 6dylan6_jdm/jd_joyopen.js",
+        "schedule": "2 1 * * *",
+        "status": 1
+    },
+    {
+        "id": 730,
+        "name": "关注有礼-加密",
+        "command": "task 6dylan6_jdm/jd_follow.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 729,
+        "name": "幸运抽奖（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_draw.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 728,
+        "name": "惊喜开盲盒（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_loadBlindBox.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 727,
+        "name": "关注店铺有礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showFavoriteShop.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 726,
+        "name": "店铺左侧刮刮乐",
+        "command": "task 6dylan6_jdm/jd_shopDraw.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 725,
+        "name": "关注店铺有礼（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_collect_shop.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 724,
+        "name": "签到有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_daySign.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 723,
+        "name": "组队瓜分奖品（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showPartition.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 722,
+        "name": "店铺礼包（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_shop_gift.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 721,
+        "name": "粉丝福利红包",
+        "command": "task 6dylan6_jdm/jd_fansDraw.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 720,
+        "name": "lzkj幸运抽大奖通用活动",
+        "command": "task 6dylan6_jdm/jd_lzkj_wxDrawActivity.js",
+        "schedule": "1 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 719,
+        "name": "CJ关注店铺有礼",
+        "command": "task 6dylan6_jdm/jd_cjwxShopFollowActivity.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 718,
+        "name": "关注有礼（lzkj_loreal）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_followShop.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 717,
+        "name": "店铺礼包（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxShopGift.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 716,
+        "name": "粉丝互动（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxFansInterActionActivity.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 715,
+        "name": "分享有礼（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_share_new.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 714,
+        "name": "积分抽奖（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showDrawOne.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 713,
+        "name": "分享有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxShareActivity.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 712,
+        "name": "邀请好友入会得好礼",
+        "command": "task 6dylan6_jdm/jd_prodev.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 711,
+        "name": "LZ店铺通用游戏任务-加密",
+        "command": "task 6dylan6_jdm/jd_game.js",
+        "schedule": "31 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 710,
+        "name": "邀请关注店铺有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_inviteFollowShop.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 709,
+        "name": "店铺抽奖（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_luck_draw.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 708,
+        "name": "完善有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_perfectInfo.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 707,
+        "name": "邀好友赢大礼",
+        "command": "task 6dylan6_jdm/jd_yqhy.py",
+        "schedule": "10 10 7 10 *",
+        "status": 1
+    },
+    {
+        "id": 706,
+        "name": "生日礼包/会员等级礼包（超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxMcLevelAndBirthGifts.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 705,
+        "name": "lzkj加购物车抽奖",
+        "command": "task 6dylan6_jdm/jd_lzkj_wxCollectionActivity.js",
+        "schedule": "1 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 704,
+        "name": "积分兑换京豆（超级会员）",
+        "command": "task 6dylan6_jdm/jd_pointExgBeans.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 703,
+        "name": "加购有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_cart.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 702,
+        "name": "店铺积分换豆",
+        "command": "task 6dylan6_jdm/jd_point_exchange.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 701,
+        "name": "幸运抽奖（超级无线V2）",
+        "command": "task 6dylan6_jdm/jd_lzkj_v2_draw.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 700,
+        "name": "读秒拼手速（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxSecond.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 699,
+        "name": "积分兑换E卡（超级会员）",
+        "command": "task 6dylan6_jdm/jd_pointExgECard.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 698,
+        "name": "批量店铺积分签到（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxSignPoint.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 697,
+        "name": "关注商品有礼（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_collect_item.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 696,
+        "name": "电脑配件通用ID任务",
+        "command": "task 6dylan6_jdm/jd_computer.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 695,
+        "name": "wskey转换",
+        "command": "task 6dylan6_jdm/jd_wskey.py",
+        "schedule": "2 10 20 5 *",
+        "status": 1
+    },
+    {
+        "id": 694,
+        "name": "签到有礼（超级无线V2）",
+        "command": "task 6dylan6_jdm/jd_lzkj_v2_sign.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 693,
+        "name": "店铺签到",
+        "command": "task 6dylan6_jdm/jd_dpqd_single.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 692,
+        "name": "知识超人（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_know.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 691,
+        "name": "幸运抽奖（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showTaskDraw.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 690,
+        "name": "关注商品有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_followGoods.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 689,
+        "name": "强制入会",
+        "command": "task 6dylan6_jdm/jd_OpenCard_Force.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 688,
+        "name": "完善有礼（超级无线V2）",
+        "command": "task 6dylan6_jdm/jd_lzkj_v2_perfectInfo.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 687,
+        "name": "积分兑换实物（超级会员）",
+        "command": "task 6dylan6_jdm/jd_pointExgShiWu.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 686,
+        "name": "6dy通用抽奖",
+        "command": "task 6dylan6_jdm/jd_wx_luckdraw.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 685,
+        "name": "店铺刮刮乐（刮一刮）",
+        "command": "task 6dylan6_jdm/jd_shop_lottery.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 684,
+        "name": "京东抽奖机加购-KR",
+        "command": "task 6dylan6_jdm/jd_lottery_cart.js",
+        "schedule": "11 11 11 11 *",
+        "status": 1
+    },
+    {
+        "id": 683,
+        "name": "分享有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_share.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 682,
+        "name": "积分兑换（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_pointsExchange.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 681,
+        "name": "幸运大转盘（无线营销）",
+        "command": "task 6dylan6_jdm/jd_gzsl_getLottery.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 680,
+        "name": "完善信息有礼（超级会员）",
+        "command": "task 6dylan6_jdm/jd_completeInfoActivity.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 679,
+        "name": "关注有礼（无线营销）",
+        "command": "task 6dylan6_jdm/jd_gzsl_contactWare.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 678,
+        "name": "店铺礼包（无线营销）",
+        "command": "task 6dylan6_jdm/jd_gzsl_shopGiftBag.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 677,
+        "name": "无线店铺签到（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_shopSign.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 676,
+        "name": "加购物车抽奖",
+        "command": "task 6dylan6_jdm/jd_wxCollectionActivity2.js",
+        "schedule": "7 7 7 7 7",
+        "status": 1
+    },
+    {
+        "id": 675,
+        "name": "关注店铺有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_lkFollowShop.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 674,
+        "name": "签到有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_daySign.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 673,
+        "name": "店铺抽奖中心（超级无线）",
+        "command": "task 6dylan6_jdm/jd_drawCenter.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 672,
+        "name": "京东直播互动抽奖",
+        "command": "task 6dylan6_jdm/jd_liveLottery.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 671,
+        "name": "每日抢好礼（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_daily.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 670,
+        "name": "lz分享有礼",
+        "command": "task 6dylan6_jdm/jd_share.js",
+        "schedule": "1 1 1 1 1",
+        "status": 1
+    },
+    {
+        "id": 669,
+        "name": "组队瓜分奖品（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_organizeTeam.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 668,
+        "name": "组队瓜分奖品（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_organizeTeam.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 667,
+        "name": "游戏赢大礼（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxGameActivity.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 666,
+        "name": "邀请入会有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_invite.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 665,
+        "name": "jd_joyjd_open通用ID任务",
+        "command": "task 6dylan6_jdm/jd_joyjd_open.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 664,
+        "name": "幸运抽奖（收藏大师）",
+        "command": "task 6dylan6_jdm/jd_txzj_lottery.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 663,
+        "name": "入会礼包",
+        "command": "task 6dylan6_jdm/jd_opencard_gift.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 662,
+        "name": "CJ每日抢好礼通用活动",
+        "command": "task 6dylan6_jdm/jd_cjdaily.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 661,
+        "name": "账号健康检查（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_healthCheck.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 660,
+        "name": "入会开卡领取礼包",
+        "command": "task 6dylan6_jdm/jd_OpenCard.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 659,
+        "name": "完善有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_lzkj_loreal_perfectInfo.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 658,
+        "name": "粉丝福利videofangrowth",
+        "command": "task 6dylan6_jdm/jd_fans_videofangrowth.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 657,
+        "name": "无线游戏（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxgame.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 656,
+        "name": "让福袋飞（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxUnPackingActivity.js",
+        "schedule": "6 6 6 6 *",
+        "status": 1
+    },
+    {
+        "id": 655,
+        "name": "盖楼有礼（超级无线）",
+        "command": "task 6dylan6_jdm/jd_wxBuildActivity.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 654,
+        "name": "生日礼包（超级无线V2）",
+        "command": "task 6dylan6_jdm/jd_lzkj_v2_birthday.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 653,
+        "name": "邀请入会赢好礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showInviteJoin.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 652,
+        "name": "签到有礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showSign.js",
+        "schedule": "54 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 651,
+        "name": "批量店铺签到（超级无线/超级会员）",
+        "command": "task 6dylan6_jdm/jd_wxSign.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 650,
+        "name": "盖楼有礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_floor.js",
+        "schedule": "54 11 * * *",
+        "status": 1
     },
     {
         "id": 647,
@@ -686,857 +1421,10 @@
         "status": 1
     },
     {
-        "id": 542,
-        "name": "完善有礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showPerfectInformation.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 541,
-        "name": "积分兑换红包（超级会员）",
-        "command": "task 6dylan6_jdm/jd_pointExgHb.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 540,
-        "name": "每日抢好礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_dailyGrabs.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 539,
-        "name": "关注商品有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_followGoods.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 538,
-        "name": "缓存IsvToken",
-        "command": "task 6dylan6_jdm/jd_cacheIsvToken.js",
-        "schedule": "0/25 * * * *",
-        "status": 1
-    },
-    {
-        "id": 537,
-        "name": "签到有礼（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_sign_in.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 536,
-        "name": "幸运抽奖（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_draw.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 535,
-        "name": "每日抢好礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_dailyGrabs.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 534,
-        "name": "积分兑换（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_pointsExchange.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 533,
-        "name": "组队瓜分奖品（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxTeam.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 532,
-        "name": "店铺抽奖-JK",
-        "command": "task 6dylan6_jdm/jd_dpcj.py",
-        "schedule": "1 1 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 531,
-        "name": "京东抽奖机通用-KR",
-        "command": "task 6dylan6_jdm/jd_lottery.js",
-        "schedule": "11 11 11 11 *",
-        "status": 1
-    },
-    {
-        "id": 530,
-        "name": "加购有礼（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxCollectionActivity.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 529,
-        "name": "关注店铺有礼（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxShopFollowActivity.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 528,
-        "name": "cjhy加购物车抽奖",
-        "command": "task 6dylan6_jdm/jd_cjhy_wxCollectionActivity.js",
-        "schedule": "1 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 527,
-        "name": "微定制瓜分京豆-加密",
-        "command": "task 6dylan6_jdm/jd_wdz.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 526,
-        "name": "关注店铺有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_lkFollowShop.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 525,
-        "name": "上上签抽奖（lzkj_loreal）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_upperSign.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 524,
-        "name": "加购有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_cart.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 523,
-        "name": "加购有礼（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_cart_item.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 522,
-        "name": "店铺礼包（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_shopGift.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 521,
-        "name": "PKC关注有礼-特效",
-        "command": "task 6dylan6_jdm/jd_txgzyl.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 520,
-        "name": "集卡有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxCollectCard.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 519,
-        "name": "店铺关注有礼",
-        "command": "task 6dylan6_jdm/jd_drawShopGift.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 518,
-        "name": "购物车锦鲤（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxCartKoi.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 517,
-        "name": "翻牌签到",
-        "command": "task 6dylan6_jdm/jd_sendbeans.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 516,
-        "name": "店铺礼包（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_shopGift.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 515,
-        "name": "签到抽奖（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_sign.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 514,
-        "name": "cjhy幸运抽大奖通用活动",
-        "command": "task 6dylan6_jdm/jd_cjhy_wxDrawActivity.js",
-        "schedule": "1 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 513,
-        "name": "LZ加购有礼通用活动",
-        "command": "task 6dylan6_jdm/jd_lzaddCart.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 512,
-        "name": "邀请关注店铺有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_inviteFollowShop.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 511,
-        "name": "积分兑换（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_exchangeActDetail.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 510,
-        "name": "加购有礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showCart.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 509,
-        "name": "joyjd通用开卡",
-        "command": "task 6dylan6_jdm/jd_joyopen.js",
-        "schedule": "2 1 * * *",
-        "status": 1
-    },
-    {
-        "id": 508,
-        "name": "关注有礼-加密",
-        "command": "task 6dylan6_jdm/jd_follow.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 507,
-        "name": "幸运抽奖（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_draw.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 506,
-        "name": "惊喜开盲盒（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_loadBlindBox.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 505,
-        "name": "关注店铺有礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showFavoriteShop.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 504,
-        "name": "店铺左侧刮刮乐",
-        "command": "task 6dylan6_jdm/jd_shopDraw.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 503,
-        "name": "关注店铺有礼（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_collect_shop.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 502,
-        "name": "www.cip.cc,",
-        "command": "task 6dylan6_jdm/jdCookie.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 501,
-        "name": "签到有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_daySign.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 500,
-        "name": "组队瓜分奖品（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showPartition.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 499,
-        "name": "店铺礼包（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_shop_gift.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 498,
-        "name": "粉丝福利红包",
-        "command": "task 6dylan6_jdm/jd_fansDraw.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 497,
-        "name": "lzkj幸运抽大奖通用活动",
-        "command": "task 6dylan6_jdm/jd_lzkj_wxDrawActivity.js",
-        "schedule": "1 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 496,
-        "name": "CJ关注店铺有礼",
-        "command": "task 6dylan6_jdm/jd_cjwxShopFollowActivity.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 495,
-        "name": "关注有礼（lzkj_loreal）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_followShop.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 494,
-        "name": "店铺礼包（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxShopGift.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 493,
-        "name": "粉丝互动（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxFansInterActionActivity.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 492,
-        "name": "分享有礼（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_share_new.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 491,
-        "name": "积分抽奖（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showDrawOne.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 490,
-        "name": "分享有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxShareActivity.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 489,
-        "name": "邀请好友入会得好礼",
-        "command": "task 6dylan6_jdm/jd_prodev.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 488,
-        "name": "LZ店铺通用游戏任务-加密",
-        "command": "task 6dylan6_jdm/jd_game.js",
-        "schedule": "31 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 487,
-        "name": "邀请关注店铺有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_inviteFollowShop.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 486,
-        "name": "店铺抽奖（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_luck_draw.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 485,
-        "name": "完善有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_perfectInfo.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 484,
-        "name": "邀好友赢大礼",
-        "command": "task 6dylan6_jdm/jd_yqhy.py",
-        "schedule": "10 10 7 10 *",
-        "status": 1
-    },
-    {
-        "id": 483,
-        "name": "生日礼包/会员等级礼包（超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxMcLevelAndBirthGifts.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 482,
-        "name": "lzkj加购物车抽奖",
-        "command": "task 6dylan6_jdm/jd_lzkj_wxCollectionActivity.js",
-        "schedule": "1 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 481,
-        "name": "积分兑换京豆（超级会员）",
-        "command": "task 6dylan6_jdm/jd_pointExgBeans.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 480,
-        "name": "加购有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_cart.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 479,
-        "name": "店铺积分换豆",
-        "command": "task 6dylan6_jdm/jd_point_exchange.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 478,
-        "name": "幸运抽奖（超级无线V2）",
-        "command": "task 6dylan6_jdm/jd_lzkj_v2_draw.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 477,
-        "name": "读秒拼手速（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxSecond.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 476,
-        "name": "积分兑换E卡（超级会员）",
-        "command": "task 6dylan6_jdm/jd_pointExgECard.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 475,
-        "name": "批量店铺积分签到（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxSignPoint.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 474,
-        "name": "关注商品有礼（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_collect_item.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 473,
-        "name": "电脑配件通用ID任务",
-        "command": "task 6dylan6_jdm/jd_computer.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 472,
-        "name": "wskey转换",
-        "command": "task 6dylan6_jdm/jd_wskey.py",
-        "schedule": "2 10 20 5 *",
-        "status": 1
-    },
-    {
-        "id": 471,
-        "name": "签到有礼（超级无线V2）",
-        "command": "task 6dylan6_jdm/jd_lzkj_v2_sign.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 470,
-        "name": "店铺签到",
-        "command": "task 6dylan6_jdm/jd_dpqd_single.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 469,
-        "name": "Rebels_jdCommon",
-        "command": "task 6dylan6_jdm/utils/Rebels_jdCommon.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 468,
-        "name": "知识超人（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_know.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 467,
-        "name": "幸运抽奖（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showTaskDraw.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 466,
-        "name": "关注商品有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_followGoods.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 465,
-        "name": "强制入会",
-        "command": "task 6dylan6_jdm/jd_OpenCard_Force.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 464,
-        "name": "完善有礼（超级无线V2）",
-        "command": "task 6dylan6_jdm/jd_lzkj_v2_perfectInfo.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 463,
-        "name": "积分兑换实物（超级会员）",
-        "command": "task 6dylan6_jdm/jd_pointExgShiWu.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 462,
-        "name": "6dy通用抽奖",
-        "command": "task 6dylan6_jdm/jd_wx_luckdraw.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 461,
-        "name": "店铺刮刮乐（刮一刮）",
-        "command": "task 6dylan6_jdm/jd_shop_lottery.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 460,
-        "name": "京东抽奖机加购-KR",
-        "command": "task 6dylan6_jdm/jd_lottery_cart.js",
-        "schedule": "11 11 11 11 *",
-        "status": 1
-    },
-    {
-        "id": 459,
-        "name": "分享有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_share.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 458,
-        "name": "积分兑换（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_pointsExchange.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 457,
-        "name": "幸运大转盘（无线营销）",
-        "command": "task 6dylan6_jdm/jd_gzsl_getLottery.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 456,
-        "name": "完善信息有礼（超级会员）",
-        "command": "task 6dylan6_jdm/jd_completeInfoActivity.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 455,
-        "name": "关注有礼（无线营销）",
-        "command": "task 6dylan6_jdm/jd_gzsl_contactWare.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 454,
-        "name": "jdValidate.js",
-        "command": "task 6dylan6_jdm/function/jdValidate.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 453,
-        "name": "jdCommon.js",
-        "command": "task 6dylan6_jdm/function/jdCommon.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 452,
-        "name": "jdCrypto.js",
-        "command": "task 6dylan6_jdm/function/jdCrypto.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 451,
-        "name": "jdCommon1.js",
-        "command": "task 6dylan6_jdm/function/jdCommon1.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 450,
-        "name": "jdcookie.js",
-        "command": "task 6dylan6_jdm/function/jdcookie.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 449,
-        "name": "店铺礼包（无线营销）",
-        "command": "task 6dylan6_jdm/jd_gzsl_shopGiftBag.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 448,
-        "name": "无线店铺签到（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_shopSign.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 447,
-        "name": "加购物车抽奖",
-        "command": "task 6dylan6_jdm/jd_wxCollectionActivity2.js",
-        "schedule": "7 7 7 7 7",
-        "status": 1
-    },
-    {
-        "id": 446,
-        "name": "关注店铺有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_lkFollowShop.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 445,
-        "name": "签到有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_daySign.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 444,
-        "name": "店铺抽奖中心（超级无线）",
-        "command": "task 6dylan6_jdm/jd_drawCenter.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 443,
-        "name": "京东直播互动抽奖",
-        "command": "task 6dylan6_jdm/jd_liveLottery.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 442,
-        "name": "每日抢好礼（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_daily.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 441,
-        "name": "lz分享有礼",
-        "command": "task 6dylan6_jdm/jd_share.js",
-        "schedule": "1 1 1 1 1",
-        "status": 1
-    },
-    {
-        "id": 440,
-        "name": "组队瓜分奖品（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_organizeTeam.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 439,
-        "name": "组队瓜分奖品（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_organizeTeam.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 438,
-        "name": "游戏赢大礼（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxGameActivity.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 437,
-        "name": "邀请入会有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_invite.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 436,
-        "name": "jd_joyjd_open通用ID任务",
-        "command": "task 6dylan6_jdm/jd_joyjd_open.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 435,
-        "name": "幸运抽奖（收藏大师）",
-        "command": "task 6dylan6_jdm/jd_txzj_lottery.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 434,
-        "name": "入会礼包",
-        "command": "task 6dylan6_jdm/jd_opencard_gift.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 433,
-        "name": "CJ每日抢好礼通用活动",
-        "command": "task 6dylan6_jdm/jd_cjdaily.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 432,
-        "name": "账号健康检查（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_healthCheck.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 431,
-        "name": "入会开卡领取礼包",
-        "command": "task 6dylan6_jdm/jd_OpenCard.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 430,
-        "name": "完善有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_perfectInfo.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 429,
-        "name": "粉丝福利videofangrowth",
-        "command": "task 6dylan6_jdm/jd_fans_videofangrowth.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 428,
-        "name": "无线游戏（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxgame.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 427,
-        "name": "让福袋飞（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxUnPackingActivity.js",
-        "schedule": "6 6 6 6 *",
-        "status": 1
-    },
-    {
-        "id": 426,
-        "name": "盖楼有礼（超级无线）",
-        "command": "task 6dylan6_jdm/jd_wxBuildActivity.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 425,
-        "name": "生日礼包（超级无线V2）",
-        "command": "task 6dylan6_jdm/jd_lzkj_v2_birthday.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 424,
-        "name": "邀请入会赢好礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showInviteJoin.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 423,
-        "name": "签到有礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showSign.js",
-        "schedule": "1 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 422,
-        "name": "批量店铺签到（超级无线/超级会员）",
-        "command": "task 6dylan6_jdm/jd_wxSign.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 421,
-        "name": "盖楼有礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_floor.js",
-        "schedule": "1 10 * * *",
+        "id": 544,
+        "name": "茶百道",
+        "command": "task 茶百道.py",
+        "schedule": "30 0 7 * * *",
         "status": 1
     },
     {
@@ -2247,13 +2135,6 @@
         "status": 1
     },
     {
-        "id": 313,
-        "name": "批量店铺签到（活动查询）",
-        "command": "task 6dylan6_jdpro/jd_dpqd_main.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
         "id": 311,
         "name": "健康能量任务",
         "command": "task 6dylan6_jdpro/jd_health_task.js",
@@ -2552,13 +2433,6 @@
         "name": "取关京东店铺和商品",
         "command": "task shufflewzc_faker3_main/jd_unsubscribeShop.js",
         "schedule": "2 2 2 2 2",
-        "status": 1
-    },
-    {
-        "id": 258,
-        "name": "加购有礼（超级无线/超级会员）",
-        "command": "task shufflewzc_faker3_main/jd_wxCollectionActivity.js",
-        "schedule": "52 1 * * *",
         "status": 1
     },
     {

@@ -1,6 +1,6 @@
 import json
 
-from robot.tg_robot.config.constant import cache_envs_data, cache_tasks_data
+from robot.tg_robot.spyConfig.sqyConfig import cache_envs_data, cache_tasks_data
 
 
 def load_json(file_path):

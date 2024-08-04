@@ -5,12 +5,8 @@ import time
 
 import requests
 
-from robot.tg_robot.config.constant import cache_tasks_data
-from robot.tg_robot.utils.readAndWrite import load_env_by_name, load_json
-
-# 客户端 ID 和客户端密钥
-client_id = "h_EAL1JJV92j"
-client_secret = "_UW_1DuQKE2eYtbJgfNMG_7H"
+from robot.tg_robot.spyConfig.sqyConfig import cache_tasks_data, client_id, client_secret
+from robot.tg_robot.utils.readAndWrite import load_json
 
 
 def updateEnv(config, id, name, remark, value):
@@ -18,7 +14,7 @@ def updateEnv(config, id, name, remark, value):
     更新环境变量的函数。
 
     参数:
-        config: 配置对象，包含服务器 IP 和端口信息
+        spyConfig: 配置对象，包含服务器 IP 和端口信息
         id: 环境变量的 ID
         name: 环境变量的名称
         remark: 环境变量的备注
@@ -47,7 +43,7 @@ def runCorn(config, id):
     运行定时任务的函数。
 
     参数:
-        config: 配置对象，包含服务器 IP 和端口信息
+        spyConfig: 配置对象，包含服务器 IP 和端口信息
         id: 定时任务的 ID
 
     返回:
@@ -118,7 +114,7 @@ def createEnv(config, name, remark, value):
     创建环境变量的函数。
 
     参数:
-        config: 配置对象，包含服务器 IP 和端口信息
+        spyConfig: 配置对象，包含服务器 IP 和端口信息
         name: 环境变量的名称
         remark: 环境变量的备注
         value: 环境变量的值
@@ -147,7 +143,7 @@ def calculateRunningTask(config):
     计算正在运行的任务数量的函数。
 
     参数:
-        config: 配置对象，包含服务器 IP 和端口信息
+        spyConfig: 配置对象，包含服务器 IP 和端口信息
 
     返回:
         正在运行的任务数量

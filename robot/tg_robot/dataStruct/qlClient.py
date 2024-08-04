@@ -4,12 +4,12 @@ import time
 
 import requests
 
-from robot.tg_robot.config.constant import cache_envs_data, cache_tasks_data
+from robot.tg_robot.spyConfig.sqyConfig import cache_envs_data, cache_tasks_data
 from robot.tg_robot.utils.qlOpenApi import updateAuthorization, getIpv4Address, updateEnv
 from robot.tg_robot.utils.readAndWrite import load_env_by_name, update_env_by_name
 
 
-class ServerConfig:
+class QLClient:
     def __init__(self, serverPort):
         self.serverIp = getIpv4Address()
         self.serverPort = serverPort

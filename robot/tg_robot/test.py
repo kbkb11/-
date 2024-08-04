@@ -1,11 +1,12 @@
 import time
 
-from robot.tg_robot.config.config import ServerConfig
+from robot.tg_robot.dataStruct.qlClient import QLClient
+from robot.tg_robot.dataStruct.messageQueue import PriorityQueue
 from robot.tg_robot.utils.parseUrl import parseMessage
 
 start_time = time.time()
 
-serverConfig = ServerConfig(5700)
+serverConfig = QLClient(5700)
 # serverConfig.init_tasks()
 # serverConfig.init_envs()
 # serverConfig.updateJDSignIp()
@@ -20,3 +21,9 @@ print(temp)
 print(temp[4])
 # task = load_task_by_name(temp[1])
 # print(task)
+
+priorityQueue = PriorityQueue()
+priorityQueue.put(temp)
+
+temp = priorityQueue.get()
+print(temp)

@@ -1,11 +1,4 @@
-import json
 import re
-import time
-import requests
-
-from robot.tg_robot.config.constant import cache_envs_data
-from robot.tg_robot.utils.qlOpenApi import createEnv, updateEnv
-from robot.tg_robot.utils.readAndWrite import load_json, update_env_by_name, load_env_by_name
 
 
 # 使用多个子函数进行判断：加购、关注、抽奖、积分兑换
@@ -14,7 +7,7 @@ def parseMessage(config, message):
     解析消息，判断消息类型并进行相应处理。
 
     参数:
-        config (dict): 配置信息。
+        spyConfig (dict): 配置信息。
         message (str): 接收到的消息字符串。
 
     返回:
@@ -55,7 +48,7 @@ def addToPurchase(config, url):
     判断URL是否为加购有礼类型，并更新相应环境变量。
 
     参数:
-        config (dict): 配置信息。
+        spyConfig (dict): 配置信息。
         url (str): 提取到的URL。
 
     返回:
@@ -63,7 +56,8 @@ def addToPurchase(config, url):
     """
     # 关键词列表，用于判断URL类型
     keywords = [
-        ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=',
+        ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10024&templateId=',
+         'https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=',
          'https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10024&templateId='],
 
         ['https://lzkj-isv.isvjd.com/wxCollectionActivity/activity?activityId=',
@@ -117,7 +111,7 @@ def followShop(config, url):
     判断URL是否为关注店铺类型，并更新相应环境变量。
 
     参数:
-        config (dict): 配置信息。
+        spyConfig (dict): 配置信息。
         url (str): 提取到的URL。
 
     返回:
@@ -179,7 +173,7 @@ def lottery(config, url):
     判断URL是否为抽奖类型，并更新相应环境变量。
 
     参数:
-        config (dict): 配置信息。
+        spyConfig (dict): 配置信息。
         url (str): 提取到的URL。
 
     返回:
@@ -214,7 +208,7 @@ def exchangePoints(config, url):
     判断URL是否为积分兑换类型，并更新相应环境变量。
 
     参数:
-        config (dict): 配置信息。
+        spyConfig (dict): 配置信息。
         url (str): 提取到的URL。
 
     返回:

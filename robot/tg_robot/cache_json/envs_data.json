@@ -30,12 +30,6 @@
         "value": "https://mcs-mimp-web.sf-express.com/mcs-mimp/share/weChat/shareGiftReceiveRedirect?source=CX&scene=6&unionId=XhmDJG81rcRWU0ie%2BVyT%2F60nYx4dbi8%2BTMRylE%2F998s%3D&openId=04%2FPdKox6ve3g2w3AMdHpWIe0J7encWeDDXnwRrNy0w%3D&memId=prJdjB4J%2FCwzY7GoR6BYD1d530vEF7sYYJUmEmlvTdoDdjSr%2F6X0WoiZtgGzs7sG&memNo=6tB15TQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLc1DdsDdjSr%2F6X0WoiZtgGzs7sG&mobile=QVULDwq202e%2BqKJX3pCVzA%3D%3D&bizCode=686%40%40eTQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLcmUXMzSjNWaC9iZW9aeGx2RT0%3D&mediaCode=wxapp\nhttps://mcs-mimp-web.sf-express.com/mcs-mimp/share/weChat/activityRedirect?source=CX&unionId=XhmDJG81rcRWU0ie%2BVyT%2F60nYx4dbi8%2BTMRylE%2F998s%3D&openId=04%2FPdKox6ve3g2w3AMdHpWIe0J7encWeDDXnwRrNy0w%3D&memId=h3W86l7ObBaEA4nCMh7oqXlHZvbHIMYKk%2B2jFPuRS4YDdjSr%2F6X0WoiZtgGzs7sG&memNo=6tB15T6k0ZvyroDMcHJm6UPJswIxsnqbS7zjb%2B%2FYiQ8DdjSr%2F6X0WoiZtgGzs7sG&mobile=sYZtGI6Y4pRsA69YY%2B0Dyg%3D%3D&mediaCode=wxapp&bizCode=%7B%22path%22%3A%22%2Fup-member%2FnewHome%22%2C%22linkCode%22%3A%22SFAC20230627172106502%22%2C%22supportShare%22%3A%22YES%22%2C%22from%22%3A%22surprise_benefitxcxpop%22%2C%22equityKey%22%3A%22surprise_benefit%22%7D"
     },
     {
-        "id": 35,
-        "name": "elmck",
-        "remarks": null,
-        "value": "ubt_ssid=f374zgwfbhud72qnqsild4jrq9ue8g30_2024-07-23; cna=304mH6/mWhICAbZpCUJJ8EYn; mtop_partitioned_detect=1; _m_h5_tk=e3a0c11efd50955cc39345e28819bd93_1721730415986; _m_h5_tk_enc=0e39f2f3ffd148dd4c5123f1fc42e8f0; _samesite_flag_=true; cookie2=17d17892794ca32e8fb7c632a2c11462e; t=794829f790f6627b2870611112347c1b; _tb_token_=e33eee7935be1; xlly_s=1; sgcookie=E100pPy4MoW%2FUNl3E9GSu5ool6zebUlpavETLGTe6DPndLKcYpnuLDnU10%2FxFN%2BN31DJXkrwxu%2BLntq3q6OKNn3tMWycCUC%2Ftb3qrlWCBfiDsm0%3D; munb=2216217353296; unb=2216217353296; USERID=3100061628043; SID=MTQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLcjMTE0NjJlyRLQPueFdCZ3B8_rE64-mg==; UTUSER=3100061628043; app_cityid=150; isg=BMfHIJ-MbcGHWOlN6Sk_U41XVnuRzJuulDLv9Zm049Z9COfKoZwr_gWJrs5W5XMm; tfstk=f-WHJp6166RQkeo8-OvQNf3DkQVOA29WOaHJyLLz_F81yXSzAuDkSNfp8MCdZ8jP-YCpLTfsEis5pk98ApsBFLzYk-BlAM970ZJVWPIa43aZIb7LHMsIbLzYk-exZaQud2YPzBRwb3TQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLchlyefbG5IHzDuMYMfh6MxBY4hFDPvOxHtESFd1t_UhWOIIdt2S9Nc1QejK2j8UCOmTQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLcNLoh6W1-lcdX_vft1M3JNLsmrUGvh9I-N82DPrwQOICC3NDTNsG5v_1an1eWB4aOferMB8gSfhsp0h28R6iXlZgSt_jSoLYTYIgGSNB-6jEGNBYtUsLaLilqigPOefhzzjlcSNB-6jEEgjjz6Thtaz"
-    },
-    {
         "id": 45,
         "name": "JD_SIGN_API",
         "remarks": "自建京东签名",
@@ -51,7 +45,13 @@
         "id": 10,
         "name": "jd_dpqd_tokens",
         "remarks": "批量店铺签到",
-        "value": "E3F53E3A5791BB19EF5003E7CF245549\n8730FDB6AC82AC303305334B1FDAB7B6\n0BAF0448C0E38382F641430D455FE451\n1541AB9B2515FD36F40390B1B71F813D\n8C92320BC8EBE9E2B3BF0C12E34F3BD3\n9D17F0FA26542DF8EE150DF898538667\nB1C9EE60BC53D6387270C66934C633A2\nF8A8A69785E016CBDD94AECD856BEE22\n5282853C8B47659965A71B38F8A687FB\n1210735C4345F9469A3211E0D7FC33A1"
+        "value": "9D17F0FA26542DF8EE150DF898538667\nB1C9EE60BC53D6387270C66934C633A2\nF8A8A69785E016CBDD94AECD856BEE22\n5282853C8B47659965A71B38F8A687FB\n1210735C4345F9469A3211E0D7FC33A1\n71AE567DB6AABA1B3245359B4E63B89D\nD1900C76ADBC3870CFB719B02D5AC9A4\n111418D77D61B2F6DB9B43D7F7A9DF7C\n8994B4032B1628DC66AAAAD25855908A\n2DBC61200A9E08B6B88DB4B305F59A09\n86E1268F7082560EF0C9D16EE853ED51\nB625DF4DA7C5CDAE89787104F1073083\nD65F939F8004AC423F2126D460207525"
+    },
+    {
+        "id": 39,
+        "name": "jd_dpqd_monitor_token",
+        "remarks": null,
+        "value": "DB3AD98B9D7C90029ACA50E23BE3318C\nAF1B870DAD59B90473D3475E67D4C723\nFF292E2693A02B273706A5BA99FCFDCF\n92C887AA59D04AFB24592311A7688630\nEFC8772DC0DB9FB704A83583B6B0013C\n80385D90126F830E8ED2E09883111D00\nD923C4C25EBD26F7144FF30B7DE4574C\n4642C688B87157E9D9F4F9FEB68E7F47\n719DF19251EAD48FA61BE030958AFE10\n0E9948DAFB7952F7CB3A1073B51EE800\nA5083B3090955DD224E734676A3F6441\n7EF6AE58B02D2D58E83BE215E9BEF6BB\n72AF274310CA3A7488E4819E317C686C"
     },
     {
         "id": 41,
@@ -74,20 +74,32 @@
     {
         "id": 14,
         "name": "jd_wyw_turnnum",
-        "remarks": null,
+        "remarks": "翻一翻投入",
         "value": "30"
     },
     {
         "id": 15,
         "name": "jd_wyw_turnmax",
+        "remarks": "翻一翻倍率",
+        "value": "1"
+    },
+    {
+        "id": 31,
+        "name": "jd_bean_change_intpersent",
         "remarks": null,
-        "value": "2"
+        "value": "8"
+    },
+    {
+        "id": 36,
+        "name": "jd_XinFarm_waternum",
+        "remarks": "农场浇水",
+        "value": "15"
     },
     {
         "id": 20,
         "name": "LUCK_DRAW_URL",
         "remarks": "店铺抽奖",
-        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10026&templateId=20210518190900jfcj011&activityId=1818227508213100546"
+        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&templateId=10021240605dzpcj01&activityId=1819202185654292481"
     },
     {
         "id": 21,
@@ -99,7 +111,7 @@
         "id": 22,
         "name": "jd_wxCollectionActivity_activityUrl",
         "remarks": "加购有礼",
-        "value": "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10024&activityId=1819664250574262274&templateId=20210518190900jgyl011&nodeId=101001&prd=cjwx"
+        "value": "https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity?activityId=300eaa7875de492e95bb3b878eda0d68"
     },
     {
         "id": 43,
@@ -120,22 +132,10 @@
         "value": "https://cjhy-isv.isvjcloud.com/mc/wxPointShopView/pointExgBeans?venderId=1000003168&giftId=91dd1d0b5fe14be2b181dbe712ca2280"
     },
     {
-        "id": 31,
-        "name": "jd_bean_change_intpersent",
-        "remarks": null,
-        "value": "8"
-    },
-    {
-        "id": 36,
-        "name": "jd_XinFarm_waternum",
-        "remarks": "农场浇水",
-        "value": "150"
-    },
-    {
-        "id": 39,
-        "name": "jd_dpqd_monitor_token",
-        "remarks": null,
-        "value": "DB3AD98B9D7C90029ACA50E23BE3318C\nAF1B870DAD59B90473D3475E67D4C723\nFF292E2693A02B273706A5BA99FCFDCF\n92C887AA59D04AFB24592311A7688630\nEFC8772DC0DB9FB704A83583B6B0013C\n80385D90126F830E8ED2E09883111D00\nD923C4C25EBD26F7144FF30B7DE4574C\n4642C688B87157E9D9F4F9FEB68E7F47\n719DF19251EAD48FA61BE030958AFE10\n0E9948DAFB7952F7CB3A1073B51EE800\nA5083B3090955DD224E734676A3F6441\n7EF6AE58B02D2D58E83BE215E9BEF6BB\n72AF274310CA3A7488E4819E317C686C"
+        "id": 53,
+        "name": "jd_wxShopFollowActivity_activityUrl",
+        "remarks": "关注店铺有礼（超级无线/超级会员）",
+        "value": "https://cjhy-isv.isvjcloud.com/wxShopFollowActivity/activity?activityId=1c4f42ba9fb448edac4d456bbd4369bc"
     },
     {
         "id": 40,
@@ -148,5 +148,17 @@
         "name": "jd_lzkj_cart_opencard",
         "remarks": null,
         "value": "true"
+    },
+    {
+        "id": 52,
+        "name": "jd_jinggeng_showCart_activityUrl",
+        "remarks": "京耕加购",
+        "value": "https://jinggeng-rc.isvjcloud.com/gl/front/showCart?id=9e80808e9106f7f20191073d54171a11&user_id=1000386404"
+    },
+    {
+        "id": 54,
+        "name": "jd_wxShopFollowActivity_activityUrl",
+        "remarks": "关注店铺有礼（超级无线/超级会员）",
+        "value": "https://cjhy-isv.isvjcloud.com/wxShopFollowActivity/activity?activityId=b14cc09f1c0345bfb86c840abc3a0bc0"
     }
 ]
