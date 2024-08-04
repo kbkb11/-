@@ -71,6 +71,9 @@ def addToPurchase(config, url):
          'https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/activity?activityId=',
          'https://cjhy-isv.isvjd.com/wxCollectionActivity/activity2/activity?activityId='
          ],
+
+        ['https://jinggeng-isv.isvjcloud.com/ql/front/showCart?'
+         ]
     ]
 
     # 检查URL是否包含在关键词列表中
@@ -93,6 +96,16 @@ def addToPurchase(config, url):
                         config,
                         'jd_wxCollectionActivity_activityUrl',
                         '加购有礼（超级无线/超级会员）',
+                        url,
+                        1
+                    ]
+
+                # 加购有礼（京耕）
+                if keyword in keywords[2]:
+                    return [
+                        config,
+                        'jd_jinggeng_showCart_activityUrl',
+                        '加购有礼（京耕）',
                         url,
                         1
                     ]
