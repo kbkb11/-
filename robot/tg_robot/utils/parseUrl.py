@@ -181,10 +181,18 @@ def lottery(config, url):
     """
     # 关键词列表，用于判断URL类型
     keywords = [
-        ['https://lzkj-isv.isvjd.com/lzclient/<活动id>/cjwx/common/entry.html?activityId=',
+        ['https://lzkj-isv.isvjd.com/lzclient/',
          'https://lzkj-isv.isvjd.com/wxDrawActivity/activity/activity?activityId=',
          'https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity/activity?activityId='
-         ]
+         ],
+
+        ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=',
+         'https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=',
+         'https://lorealjdcampaign-rc.isvjcloud.com/interact/index?activityType='
+         ],
+
+        ['https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/',
+         ],
     ]
     for keyword_list in keywords:
         for keyword in keyword_list:
@@ -195,6 +203,24 @@ def lottery(config, url):
                         config,
                         'LUCK_DRAW_URL',
                         '店铺抽奖（超级无线/超级会员）',
+                        url,
+                        3
+                    ]
+
+                if keyword in keywords[1]:
+                    return [
+                        config,
+                        'jd_lzkj_draw_url',
+                        '幸运抽奖（超级无线）',
+                        url,
+                        3
+                    ]
+
+                if keyword in keywords[2]:
+                    return [
+                        config,
+                        'jd_lzkj_v2_draw_url',
+                        '幸运抽奖（超级无线V2）',
                         url,
                         3
                     ]

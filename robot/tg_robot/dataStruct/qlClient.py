@@ -27,6 +27,7 @@ class QLClient:
 
         response = requests.get(f"http://{self.serverIp}:{self.serverPort}/open/crons", headers=headers, json=data)
         tasks = response.json().get('data', {}).get('data', [])
+
         # 存储任务数据到本地 JSON 文件
         tasks_to_save = []
         for item in tasks:

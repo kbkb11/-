@@ -48,7 +48,7 @@ def write_json(file_path, data):
         return False
 
 
-def load_task_by_name(task_name):
+def load_task_by_name(task_name, subscribe=" "):
     """
     根据任务名称从 JSON 文件中读取任务信息。
 
@@ -61,7 +61,8 @@ def load_task_by_name(task_name):
 
         for task in tasks:
             if task.get("name") == task_name:
-                return task
+                if subscribe in task.get("command"):
+                    return task
 
         print(f"未找到名称为 {task_name} 的任务")
         return None

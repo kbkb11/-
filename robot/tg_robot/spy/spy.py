@@ -31,7 +31,11 @@ async def handler(event):
 
     temp = parseMessage(config, message_text)
     if temp is not None:
-        priorityQueue.put([temp[4], temp[1], temp[2], temp[3]])
+        if priorityQueue.item_map.get((temp[1], temp[2], temp[3])) is None:
+            # priorityQueue.item_map[(temp[1], temp[2], temp[3])] = 1
+            priorityQueue.put([temp[4], temp[1], temp[2], temp[3]])
+        else:
+            print("任务已存在")
 
 
 async def consumePriorityQueueTasks():
@@ -68,7 +72,7 @@ async def consumePriorityQueueTasks():
 
             # 更新环境变量
             update_env_variable(config, nextTask[1], nextTask[2], nextTask[3], nextTask[0])
-            nextTaskId = load_task_by_name(nextTask[2])['id']
+            nextTaskId = load_task_by_name(nextTask[2], " ")['id']
             # 更新白名单
             runCorn(config, 646)
             print("代理白名单更新完成")

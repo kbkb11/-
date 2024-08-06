@@ -3,7 +3,7 @@ import threading
 import time
 
 # 从自定义模块导入所需的函数
-from robot.tg_robot.utils.qlOpenApi import calculateRunningTask, runCorn, createEnv, updateEnv
+from robot.tg_robot.utils.qlOpenApi import createEnv, updateEnv
 from robot.tg_robot.utils.readAndWrite import load_task_by_name, load_env_by_name, update_env_by_name
 
 
@@ -30,7 +30,7 @@ class PriorityQueue:
             item (list): 包含 [level, name, variable_name, url] 的列表。
         """
         with self.lock:
-            item_key = (item[1], item[2], item[3])  # 使用 (name, variable_name, url) 作为唯一标识
+            item_key = item[3]  # 使用 url 作为唯一标识
             if item_key not in self.item_map:
                 # 添加项到优先队列和哈希表
                 heapq.heappush(self.queue, item)
@@ -50,7 +50,7 @@ class PriorityQueue:
             if len(self.queue) == 0:
                 return None
             item = heapq.heappop(self.queue)
-            item_key = (item[1], item[2], item[3])  # 使用 (name, variable_name, url) 作为唯一标识
+            item_key = item[3]  # 使用 url 作为唯一标识
             # 从哈希表中删除已取出的项
             del self.item_map[item_key]
             return item
