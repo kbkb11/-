@@ -39,19 +39,32 @@ def get_chatroom_by_name(chatroom_name):
 
 def handle_message(msg):
     # 提取 http 或 https 开头的 URL
-    urls = extract_http_urls(msg['Text'])
+    message = msg['Text']
+    urls = extract_http_urls(message)
     # 检查是否包含指定的关键词
-    for i in range(len(urls)):
-        if not contains_keywords(urls[i], keywords):
-            # 推送消息
-            response_message = f"检测到新线报: \n {urls[i]}"
-            # 指定要发送的群聊名称
-            target_chatroom_name = '京东'  # 替换为目标群聊名称
-            chatroom_user_name = get_chatroom_by_name(target_chatroom_name)
-            if chatroom_user_name:
-                itchat.send(response_message, toUserName=chatroom_user_name)
-            else:
-                print(f"未找到名称为 '{target_chatroom_name}' 的群聊")
+    if contains_keywords(message, "关注"):
+        # 推送消息
+        response_message = f"检测到新线报: \n {message}"
+        # 指定要发送的群聊名称
+        target_chatroom_name = '京东'
+        chatroom_user_name = get_chatroom_by_name(target_chatroom_name)
+        if chatroom_user_name:
+            itchat.send(response_message, toUserName=chatroom_user_name)
+        else:
+            print(f"未找到名称为 '{target_chatroom_name}' 的群聊")
+
+
+    # for i in range(len(urls)):
+    #     if not contains_keywords(urls[i], keywords):
+    #         # 推送消息
+    #         response_message = f"检测到新线报: \n {urls[i]}"
+    #         # 指定要发送的群聊名称
+    #         target_chatroom_name = '京东'  # 替换为目标群聊名称
+    #         chatroom_user_name = get_chatroom_by_name(target_chatroom_name)
+    #         if chatroom_user_name:
+    #             itchat.send(response_message, toUserName=chatroom_user_name)
+    #         else:
+    #             print(f"未找到名称为 '{target_chatroom_name}' 的群聊")
 
 
 @itchat.msg_register(['Text'], isGroupChat=True)

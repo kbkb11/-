@@ -11,10 +11,10 @@ headers_template = {
     'Accept-Language': 'zh-CN,zh;q=0.9',
     'Connection': 'keep-alive',
     'Content-Type': 'application/json',
-    'Host': 'webapi2.qmai.cn',
+    'Host': 'webapi.qmai.cn',
     'Qm-From': 'wechat',
     'Qm-From-Type': 'catering',
-    'Referer': 'https://servicewechat.com/wxafec6f8422cb357b/178/page-frame.html',
+    'Referer': 'https://servicewechat.com/wxd92a2d29f8022f40/325/page-frame.html',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'cross-site',
@@ -24,14 +24,13 @@ headers_template = {
 
 # 请求体
 data = {
-    "activityId": "947079313798000641",
-    "appid": "wxafec6f8422cb357b"
+    "activityId": "1004435002421583872",
+    "appid": "wxd92a2d29f8022f40"
 }
 
 # 你的多个 Qm-User-Token
 qm_user_tokens = [
-    'i9cOtBfFJ0PtpiFfrqmeGLzRwj3t5uU8dOHM1azftdhUX2kI3tTNC8XEN4cmK287',
-    '4VMkGU03iZJIHkXt37XvhuReASEmFBIuX6KtmrBFyztE1bGcArp1MIfCGb1YNxlv'
+    'w4jV1nIrNMYkwNJm7aVGwmodxD_BM_EXiNB-M5H2m3Zxlo8adPdD4ZmgwTg4BEti',
 ]
 
 
@@ -42,7 +41,7 @@ def sign(token):
     time.sleep(random.uniform(5, 10))
     headers = headers_template.copy()
 
-    headers["Content-Length"] = '64'
+    headers["Content-Length"] = '65'
     headers["Qm-User-Token"] = token
 
     response = requests.post(url, headers=headers, json=data)
@@ -102,15 +101,15 @@ def querySignRecord(token):
     # 查询签到记录的URL
     url = 'https://webapi2.qmai.cn/web/cmk-center/sign/userSignRecordCalendar'
     payload = {
-        "activityId": "947079313798000641",
+        "activityId": "1004435002421583872",
         "startDate": "2024-02-01",
         "endDate": "2024-09-30",
-        "appid": "wxafec6f8422cb357b"
+        "appid": "wxd92a2d29f8022f40"
     }
 
     time.sleep(random.uniform(2, 3))
     headers = headers_template.copy()
-    headers["Content-Length"] = '112'
+    headers["Content-Length"] = '113'
     headers["Qm-User-Token"] = token
 
     response = requests.post(url, headers=headers, json=payload)
@@ -147,11 +146,9 @@ def calculate_consecutive_days(sign_date_list):
 
 if __name__ == '__main__':
     for token in qm_user_tokens:
-        time.sleep(random.uniform(3, 6))
-
-        queryMobilePhone(token)
+        # queryMobilePhone(token)
         sign(token)
         queryReward(token)
         querySignRecord(token)
         print("-" * 50)
-        time.sleep(random.uniform(1, 2))
+        time.sleep(random.uniform(3, 6))

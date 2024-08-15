@@ -6,7 +6,7 @@ from tools.layout import tap_text_center_on_screen, get_text_center_from_screens
     get_text_data_from_screenshot, find_text_center
 
 # 模块级别的广告等待时间全局变量
-AD_WAIT_TIME = 5
+AD_WAIT_TIME = 2
 
 # 设备对象
 device = None
@@ -48,9 +48,10 @@ def jrtt_read(times):
 
 def jrtt_advance():
     """看广告任务"""
-    now_times = 1
+    now_times = 0
     while True:
         start_time = time.time()
+        now_times += 1
 
         wait_time = AD_WAIT_TIME * random.uniform(1.01, 1.15)
         time.sleep(wait_time)
@@ -62,9 +63,7 @@ def jrtt_advance():
         center = find_text_center(text_data, "广告", 2400, 1, 1)
         if center:
             print(f"处于广告页面,再次等待{wait_time + 15}秒")
-            time.sleep(wait_time + 15)
-
-        print(text_data)
+            time.sleep(wait_time + 20)
 
         text = ["点击", "领取"]
         for i in range(len(text)):
@@ -113,7 +112,7 @@ def jrtt_readRandomPaper():
         time.sleep(random.uniform(1.42, 1.96))
 
         # 点击“随即搜”按钮
-        tap_text_center_on_screen("随机搜", 2, 2, device)
+        tap_text_center_on_screen("随机搜", 1, 1, device)
 
 
 def main():

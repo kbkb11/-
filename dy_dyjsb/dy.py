@@ -207,9 +207,6 @@ def main():
         # time.sleep(3*60+10)
         dy_keep_account_lookShortVideo(10)
 
-        # dy_task_open_daily_box()
-        # time.sleep(random.uniform(0.8, 1.2) * 4)
-        # dy_task_advance()
 
 
 if __name__ == "__main__":

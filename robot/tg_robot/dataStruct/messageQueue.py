@@ -34,7 +34,7 @@ class PriorityQueue:
             if item_key not in self.item_map:
                 # 添加项到优先队列和哈希表
                 heapq.heappush(self.queue, item)
-                self.item_map[item_key] = item
+                self.item_map[item_key] = 1
                 print(f"添加任务：{item[2]}")
             else:
                 print(f"任务已存在：{item[2]}")

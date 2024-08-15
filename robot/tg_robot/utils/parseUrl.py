@@ -40,6 +40,11 @@ def parseMessage(config, message):
         if res:
             return res
 
+        # 判断是否为组队瓜分类
+        res = wxTeam(config, url)
+        if res:
+            return res
+
     return None
 
 
@@ -60,13 +65,13 @@ def addToPurchase(config, url):
          'https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=',
          'https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10024&templateId='],
 
-        ['https://lzkj-isv.isvjd.com/wxCollectionActivity/activity?activityId=',
-         'https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity?activityId=',
-         'https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/activity?activityId=',
-         'https://cjhy-isv.isvjd.com/wxCollectionActivity/activity2/activity?activityId='
+        ['https://lzkj-isv.isvjd.com/wxCollectionActivity/activity',
+         'https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity',
+         'https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/activity',
+         'https://cjhy-isv.isvjd.com/wxCollectionActivity/activity2/activity'
          ],
 
-        ['https://jinggeng-isv.isvjcloud.com/ql/front/showCart?'
+        ['https://jinggeng-isv.isvjcloud.com/ql/front/showCart'
          ]
     ]
 
@@ -122,7 +127,7 @@ def followShop(config, url):
         ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10053&templateId=',
          'https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10053&templateId='],
 
-        ['https://cjhy-isv.isvjcloud.com/wxShopFollowActivity/activity?activityId=',
+        ['https://cjhy-isv.isvjcloud.com/wxShopFollowActivity/activity',
          'https://lzkj-isv.isvjcloud.com/wxShopFollowActivity/activity/activity?activityId=',
          ],
 
@@ -182,8 +187,8 @@ def lottery(config, url):
     # 关键词列表，用于判断URL类型
     keywords = [
         ['https://lzkj-isv.isvjd.com/lzclient/',
-         'https://lzkj-isv.isvjd.com/wxDrawActivity/activity/activity?activityId=',
-         'https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity/activity?activityId='
+         'https://lzkj-isv.isvjd.com/wxDrawActivity/activity',
+         'https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity'
          ],
 
         ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=',
@@ -191,7 +196,7 @@ def lottery(config, url):
          'https://lorealjdcampaign-rc.isvjcloud.com/interact/index?activityType='
          ],
 
-        ['https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/',
+        ['https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2',
          ],
     ]
     for keyword_list in keywords:
@@ -257,5 +262,54 @@ def exchangePoints(config, url):
                         url,
                         4
                     ]
+
+    return None
+
+
+# 组队瓜分
+def wxTeam(config, url):
+    """
+    判断URL是否为组队瓜分类型，并更新相应环境变量。
+
+    参数:
+        spyConfig (dict): 配置信息。
+        url (str): 提取到的URL。
+
+    返回:
+        json: 如果URL为组队瓜分类型，则返回对应的字符串描述；否则返回 None。
+    """
+    # 关键词列表，用于判断URL类型
+    keywords = [
+        ['https://lzkj-isv.isvjd.com/wxTeam/activity2/activity',
+         'https://cjhy-isv.isvjcloud.com/wxTeam/activity',
+         'https://cjhydz-isv.isvjcloud.com/wxTeam/',
+         ],
+
+        ['https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033'
+        ]
+    ]
+    for keyword_list in keywords:
+        for keyword in keyword_list:
+            if keyword in url:
+                # 组队瓜分奖品（超级无线/超级会员）
+                if keyword in keywords[0]:
+                    return [
+                        config,
+                        'jd_wxTeam_activityUrl',
+                        '组队瓜分奖品（超级无线/超级会员）',
+                        url,
+                        5
+                    ]
+
+                # 组队瓜分奖品（超级无线）
+                if keyword in keywords[1]:
+                    return[
+                        config,
+                        'jd_lzkj_organizeTeam_url',
+                        '组队瓜分奖品（超级无线）',
+                        url,
+                        5
+                    ]
+
 
     return None

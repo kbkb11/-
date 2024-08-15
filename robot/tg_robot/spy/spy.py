@@ -30,9 +30,11 @@ async def handler(event):
     print(f"Received message:\n {message_text}")
 
     temp = parseMessage(config, message_text)
-    if temp is not None:
+
+    # 不管temp[4]=5的情况
+    if temp is not None and temp[4] != 5:
         if priorityQueue.item_map.get((temp[1], temp[2], temp[3])) is None:
-            # priorityQueue.item_map[(temp[1], temp[2], temp[3])] = 1
+            # priorityQueue.item_map[(temp.py[1], temp.py[2], temp.py[3])] = 1
             priorityQueue.put([temp[4], temp[1], temp[2], temp[3]])
         else:
             print("任务已存在")
@@ -40,7 +42,7 @@ async def handler(event):
 
 async def consumePriorityQueueTasks():
     execution_timestamps = []  # 记录任务的执行时间戳，以跟踪任务执行情况
-    max_tasks = 20  # 60分钟内允许的最大任务数
+    max_tasks = 5  # 60分钟内允许的最大任务数
     interval_seconds = 3600  # 60分钟的秒数
 
     while True:

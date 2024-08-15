@@ -1,30 +1,9 @@
 [
     {
-        "id": 644,
-        "name": "大牌联合0801",
-        "command": "task shufflewzc_faker3_main/jd_dplh0801.js",
+        "id": 990,
+        "name": "8.9-8.18 818手机节",
+        "command": "task shufflewzc_faker3_main/jd_phone_818.js",
         "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 369,
-        "name": "京东快递签到",
-        "command": "task 6dylan6_jdpro/jd_kd.js",
-        "schedule": "23 4 * * *",
-        "status": 1
-    },
-    {
-        "id": 350,
-        "name": "每日抽豆",
-        "command": "task 6dylan6_jdpro/jd_dygetbeans_.js",
-        "schedule": "20 7 * * *",
-        "status": 1
-    },
-    {
-        "id": 293,
-        "name": "看视频赚现金-任务",
-        "command": "task 6dylan6_jdpro/jd_video_task.js",
-        "schedule": "45 7 * * *",
         "status": 1
     },
     {
@@ -45,7 +24,14 @@
         "id": 263,
         "name": "种豆得豆",
         "command": "task shufflewzc_faker3_main/jd_plantBean.js",
-        "schedule": "26 9,14 * * *",
+        "schedule": "5 9,17 * * *",
+        "status": 1
+    },
+    {
+        "id": 262,
+        "name": "赚汪贝兑礼品",
+        "command": "task shufflewzc_faker3_main/jd_mk_game.js",
+        "schedule": "25 10 * * *",
         "status": 1
     },
     {
@@ -91,13 +77,6 @@
         "status": 1
     },
     {
-        "id": 241,
-        "name": "新转赚红包抽奖提现",
-        "command": "task shufflewzc_faker3_main/jd_zzhb_new_draw.js",
-        "schedule": "10 14 * * *",
-        "status": 1
-    },
-    {
         "id": 234,
         "name": "特价现金挖宝任务",
         "command": "task shufflewzc_faker3_main/jx_fcwb_auto.js",
@@ -133,17 +112,10 @@
         "status": 1
     },
     {
-        "id": 204,
-        "name": "玩一玩_任务",
-        "command": "task shufflewzc_faker3_main/jd_wyw.js",
-        "schedule": "5 9 * * *",
-        "status": 1
-    },
-    {
         "id": 195,
         "name": "积分换话费",
         "command": "task shufflewzc_faker3_main/jd_dwapp.js",
-        "schedule": "56 7,18 * * *",
+        "schedule": "56 7 * * *",
         "status": 1
     },
     {
@@ -158,13 +130,6 @@
         "name": "做任务赚汪贝",
         "command": "task shufflewzc_faker3_main/jd_zwb.js",
         "schedule": "30 11 * * *",
-        "status": 1
-    },
-    {
-        "id": 179,
-        "name": "公众号粉丝福利",
-        "command": "task shufflewzc_faker3_main/jd_wechat_fans.js",
-        "schedule": "6 0 * * *",
         "status": 1
     },
     {
@@ -203,13 +168,6 @@
         "status": 1
     },
     {
-        "id": 149,
-        "name": "逛视频刷视频",
-        "command": "task shufflewzc_faker3_main/jd_video_shua.js",
-        "schedule": "0 7 * * *",
-        "status": 1
-    },
-    {
         "id": 142,
         "name": "当日收支查询",
         "command": "task shufflewzc_faker3_main/jd_querryBeans.js",
@@ -227,7 +185,14 @@
         "id": 127,
         "name": "频道场馆批量签到",
         "command": "task shufflewzc_faker3_main/jd_channel_venue_sign.js",
-        "schedule": "10 0 * * *",
+        "schedule": "8 0 * * *",
+        "status": 1
+    },
+    {
+        "id": 118,
+        "name": "服装抽奖",
+        "command": "task shufflewzc_faker3_main/jd_clothing_draw.js",
+        "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
@@ -248,7 +213,7 @@
         "id": 104,
         "name": "健康能量任务",
         "command": "task shufflewzc_faker3_main/jd_health_task.js",
-        "schedule": "12 14 * * *",
+        "schedule": "12 17 * * *",
         "status": 1
     },
     {
@@ -294,52 +259,17 @@
         "status": 1
     },
     {
-        "id": 641,
-        "name": "夺金刮刮乐_抽奖",
-        "command": "task 6dylan6_jdpro/jd_djggl_draw.js",
-        "schedule": "1 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 547,
-        "name": "玩一玩_指定助力",
-        "command": "task 6dylan6_jdpro/jd_wyw_help.js",
-        "schedule": "1 6 29 2 *",
+        "id": 979,
+        "name": "幸运抽奖（超级无线）",
+        "command": "task shufflewzc_faker3_main/jd_lzkj_draw.js",
+        "schedule": "37 8 * * *",
         "status": 1
     },
     {
         "id": 386,
         "name": "库迪咖啡.js",
         "command": "task yang7758258_ohhh_QL-Script/库迪咖啡.js",
-        "schedule": "1 0 11 * * *",
-        "status": 1
-    },
-    {
-        "id": 372,
-        "name": "种豆得豆任务",
-        "command": "task 6dylan6_jdpro/jd_plantBean.js",
-        "schedule": "19 7 * * *",
-        "status": 1
-    },
-    {
-        "id": 344,
-        "name": "看视频赚现金-浏览",
-        "command": "task 6dylan6_jdpro/jd_video_view.js",
-        "schedule": "0 7 * * *",
-        "status": 1
-    },
-    {
-        "id": 321,
-        "name": "玩一玩_任务",
-        "command": "task 6dylan6_jdpro/jd_wanyiwan.js",
-        "schedule": "23 5,10 * * *",
-        "status": 1
-    },
-    {
-        "id": 313,
-        "name": "批量店铺签到（活动查询）",
-        "command": "task 6dylan6_jdpro/jd_dpqd_main.js",
-        "schedule": "1 1 1 1 *",
+        "schedule": "40 59 10 * * *",
         "status": 1
     },
     {
@@ -364,6 +294,13 @@
         "status": 1
     },
     {
+        "id": 241,
+        "name": "新转赚红包抽奖提现",
+        "command": "task shufflewzc_faker3_main/jd_zzhb_new_draw.js",
+        "schedule": "10 14 * * *",
+        "status": 1
+    },
+    {
         "id": 237,
         "name": "批量店铺签到",
         "command": "task shufflewzc_faker3_main/jd_dpqd_sign.js",
@@ -385,6 +322,13 @@
         "status": 1
     },
     {
+        "id": 204,
+        "name": "玩一玩_任务",
+        "command": "task shufflewzc_faker3_main/jd_wyw.js",
+        "schedule": "5 9 * * *",
+        "status": 1
+    },
+    {
         "id": 182,
         "name": "种豆得豆内部互助",
         "command": "task shufflewzc_faker3_main/jd_plantBean_help.js",
@@ -392,17 +336,10 @@
         "status": 1
     },
     {
-        "id": 168,
-        "name": "京东国际任务",
-        "command": "task shufflewzc_faker3_main/jd_gmart.js",
-        "schedule": "15 1,17 * * *",
-        "status": 1
-    },
-    {
-        "id": 156,
-        "name": "清空购物车（H5版）",
-        "command": "task shufflewzc_faker3_main/jd_clean_cart.js",
-        "schedule": "0 6 * * *",
+        "id": 179,
+        "name": "公众号粉丝福利",
+        "command": "task shufflewzc_faker3_main/jd_wechat_fans.js",
+        "schedule": "6 0 * * *",
         "status": 1
     },
     {
@@ -410,6 +347,13 @@
         "name": "店铺抽奖（超级无线/超级会员）",
         "command": "task shufflewzc_faker3_main/jd_luck_draw.js",
         "schedule": "52 1 * * *",
+        "status": 1
+    },
+    {
+        "id": 136,
+        "name": "新转赚红包助力",
+        "command": "task shufflewzc_faker3_main/jd_zzhb_new_help.js",
+        "schedule": "0 0,12 * * *",
         "status": 1
     },
     {
@@ -424,13 +368,6 @@
         "name": "加购有礼（超级无线）",
         "command": "task shufflewzc_faker3_main/jd_lzkj_cart.js",
         "schedule": "52 1 * * *",
-        "status": 1
-    },
-    {
-        "id": 130,
-        "name": "金融捕鱼助力",
-        "command": "task shufflewzc_faker3_main/jd_jr_fish_help.js",
-        "schedule": "2 15 * * *",
         "status": 1
     },
     {
@@ -455,45 +392,73 @@
         "status": 1
     },
     {
+        "id": 95,
+        "name": "新版玩一玩之摇一摇抽奖",
+        "command": "task shufflewzc_faker3_main/jd_wyw_draw.js",
+        "schedule": "29 43 19 * * *",
+        "status": 1
+    },
+    {
         "id": 83,
         "name": "新版玩一玩翻翻乐",
         "command": "task shufflewzc_faker3_main/jd_wyw_ffl.js",
-        "schedule": "48 10-19 * * *",
-        "status": 1
-    },
-    {
-        "id": 69,
-        "name": "逛视频任务",
-        "command": "task shufflewzc_faker3_main/jd_video_task.js",
-        "schedule": "20 7 * * *",
-        "status": 1
-    },
-    {
-        "id": 63,
-        "name": "特价现金挖宝助力",
-        "command": "task shufflewzc_faker3_main/jx_fcwb_help.js",
-        "schedule": "1 13 * * *",
+        "schedule": "12 10-11 * * *",
         "status": 1
     },
     {
         "id": 58,
         "name": "新版玩一玩兑换奖品",
         "command": "task shufflewzc_faker3_main/jd_wyw_exchange.js",
+        "schedule": "2 0 0 * * *",
+        "status": 1
+    },
+    {
+        "id": 995,
+        "name": "华住会",
+        "command": "task 华住会.py",
+        "schedule": "0 7 * * *",
+        "status": 1
+    },
+    {
+        "id": 991,
+        "name": "大牌联合0809",
+        "command": "task shufflewzc_faker3_main/jd_dplh0809.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 649,
-        "name": "新东东农场助力指定次数",
-        "command": "task shufflewzc_faker3_main/jd_XinFarm_helpnum.js",
+        "id": 987,
+        "name": "大牌联合0810",
+        "command": "task shufflewzc_faker3_main/jd_dplh0810.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 648,
-        "name": "8.3-8.13 Plus尊享 宠爱驾到",
-        "command": "task shufflewzc_faker3_main/jd_opencard_puls.js",
+        "id": 984,
+        "name": "8.8-8.15 初秋有礼 大牌惊喜",
+        "command": "task shufflewzc_faker3_main/jd_opencard_0808.js",
         "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 981,
+        "name": "大牌联合0806",
+        "command": "task shufflewzc_faker3_main/jd_dplh0806.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 853,
+        "name": "京东快递签到",
+        "command": "task 6dylan6_jdpro/jd_kd.js",
+        "schedule": "23 16 * * *",
+        "status": 1
+    },
+    {
+        "id": 833,
+        "name": "每日抽豆",
+        "command": "task 6dylan6_jdpro/jd_dygetbeans_.js",
+        "schedule": "0 8 * * *",
         "status": 1
     },
     {
@@ -539,808 +504,1508 @@
         "status": 1
     },
     {
-        "id": 764,
-        "name": "完善有礼（京耕）",
-        "command": "task 6dylan6_jdm/jd_jinggeng_showPerfectInformation.js",
-        "schedule": "54 11 * * *",
+        "id": 994,
+        "name": "大牌0809",
+        "command": "task 6dylan6_jdpro/jd_dplh0809.js",
+        "schedule": "20 8 9 8 *",
         "status": 1
     },
     {
-        "id": 763,
+        "id": 993,
+        "name": "京东试用通知",
+        "command": "task shufflewzc_faker3_main/jd_try_notify.js",
+        "schedule": "59 16 * * *",
+        "status": 1
+    },
+    {
+        "id": 992,
+        "name": "积分兑换E卡（超级会员）",
+        "command": "task shufflewzc_faker3_main/jd_pointExgECard.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 989,
+        "name": "818手机节",
+        "command": "task 6dylan6_jdpro/jd_818phone.js",
+        "schedule": "2 2 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 988,
+        "name": "中国电信",
+        "command": "task 中国电信.js",
+        "schedule": "0 7 * * *",
+        "status": 1
+    },
+    {
+        "id": 986,
+        "name": "大牌0810",
+        "command": "task 6dylan6_jdpro/jd_dplh0810.js",
+        "schedule": "20 8 10 8 *",
+        "status": 1
+    },
+    {
+        "id": 985,
+        "name": "8.8-8.15 初秋有礼 大牌惊喜",
+        "command": "task 6dylan6_jdpro/jd_opencard0808.js",
+        "schedule": "0 0 8 8 *",
+        "status": 1
+    },
+    {
+        "id": 982,
+        "name": "京豆国际频道任务",
+        "command": "task 6dylan6_jdpro/jd_global_task_.js",
+        "schedule": "31 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 977,
+        "name": "8.5-8.12 畅快嗨一夏 大牌嘉年华",
+        "command": "task shufflewzc_faker3_main/jd_opencard_0805.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 976,
+        "name": "完善有礼（京耕）",
+        "command": "task 6dylan6_jdm/jd_jinggeng_showPerfectInformation.js",
+        "schedule": "31 15 * * *",
+        "status": 1
+    },
+    {
+        "id": 975,
         "name": "积分兑换红包（超级会员）",
         "command": "task 6dylan6_jdm/jd_pointExgHb.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 762,
+        "id": 974,
         "name": "每日抢好礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_dailyGrabs.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 761,
+        "id": 973,
         "name": "关注商品有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_followGoods.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 760,
+        "id": 972,
         "name": "缓存IsvToken",
         "command": "task 6dylan6_jdm/jd_cacheIsvToken.js",
         "schedule": "0/25 * * * *",
         "status": 1
     },
     {
-        "id": 759,
+        "id": 971,
         "name": "签到有礼（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_sign_in.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 758,
+        "id": 970,
         "name": "幸运抽奖（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_draw.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 757,
+        "id": 969,
         "name": "每日抢好礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_dailyGrabs.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 756,
+        "id": 968,
         "name": "积分兑换（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_pointsExchange.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 755,
+        "id": 967,
         "name": "组队瓜分奖品（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxTeam.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 754,
+        "id": 966,
         "name": "店铺抽奖-JK",
         "command": "task 6dylan6_jdm/jd_dpcj.py",
         "schedule": "1 1 1 1 1 1",
         "status": 1
     },
     {
-        "id": 753,
+        "id": 965,
         "name": "京东抽奖机通用-KR",
         "command": "task 6dylan6_jdm/jd_lottery.js",
         "schedule": "11 11 11 11 *",
         "status": 1
     },
     {
-        "id": 752,
+        "id": 964,
         "name": "加购有礼（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxCollectionActivity.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 751,
+        "id": 963,
         "name": "关注店铺有礼（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxShopFollowActivity.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 750,
+        "id": 962,
         "name": "cjhy加购物车抽奖",
         "command": "task 6dylan6_jdm/jd_cjhy_wxCollectionActivity.js",
         "schedule": "1 1 1 1 1",
         "status": 1
     },
     {
-        "id": 749,
+        "id": 961,
         "name": "微定制瓜分京豆-加密",
         "command": "task 6dylan6_jdm/jd_wdz.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 748,
+        "id": 960,
         "name": "关注店铺有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_lkFollowShop.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 747,
+        "id": 959,
         "name": "上上签抽奖（lzkj_loreal）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_upperSign.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 746,
+        "id": 958,
         "name": "加购有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_cart.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 745,
+        "id": 957,
         "name": "加购有礼（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_cart_item.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 744,
+        "id": 956,
         "name": "店铺礼包（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_shopGift.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 743,
+        "id": 955,
         "name": "PKC关注有礼-特效",
         "command": "task 6dylan6_jdm/jd_txgzyl.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 742,
+        "id": 954,
         "name": "集卡有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxCollectCard.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 741,
+        "id": 953,
         "name": "店铺关注有礼",
         "command": "task 6dylan6_jdm/jd_drawShopGift.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 740,
+        "id": 952,
         "name": "购物车锦鲤（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxCartKoi.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 739,
+        "id": 951,
         "name": "翻牌签到",
         "command": "task 6dylan6_jdm/jd_sendbeans.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 738,
+        "id": 950,
         "name": "店铺礼包（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_shopGift.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 737,
+        "id": 949,
         "name": "签到抽奖（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_sign.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 736,
+        "id": 948,
         "name": "cjhy幸运抽大奖通用活动",
         "command": "task 6dylan6_jdm/jd_cjhy_wxDrawActivity.js",
         "schedule": "1 1 1 1 1",
         "status": 1
     },
     {
-        "id": 735,
+        "id": 947,
         "name": "LZ加购有礼通用活动",
         "command": "task 6dylan6_jdm/jd_lzaddCart.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 734,
+        "id": 946,
         "name": "邀请关注店铺有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_inviteFollowShop.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 733,
+        "id": 945,
         "name": "积分兑换（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_exchangeActDetail.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 732,
+        "id": 944,
         "name": "加购有礼（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showCart.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 731,
+        "id": 943,
         "name": "joyjd通用开卡",
         "command": "task 6dylan6_jdm/jd_joyopen.js",
         "schedule": "2 1 * * *",
         "status": 1
     },
     {
-        "id": 730,
+        "id": 942,
         "name": "关注有礼-加密",
         "command": "task 6dylan6_jdm/jd_follow.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 729,
-        "name": "幸运抽奖（超级无线）",
-        "command": "task 6dylan6_jdm/jd_lzkj_loreal_draw.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 728,
+        "id": 940,
         "name": "惊喜开盲盒（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_loadBlindBox.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 727,
+        "id": 939,
         "name": "关注店铺有礼（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showFavoriteShop.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 726,
+        "id": 938,
         "name": "店铺左侧刮刮乐",
         "command": "task 6dylan6_jdm/jd_shopDraw.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 725,
+        "id": 937,
         "name": "关注店铺有礼（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_collect_shop.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 724,
+        "id": 936,
         "name": "签到有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_daySign.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 723,
+        "id": 935,
         "name": "组队瓜分奖品（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showPartition.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 722,
+        "id": 934,
         "name": "店铺礼包（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_shop_gift.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 721,
+        "id": 933,
         "name": "粉丝福利红包",
         "command": "task 6dylan6_jdm/jd_fansDraw.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 720,
+        "id": 932,
         "name": "lzkj幸运抽大奖通用活动",
         "command": "task 6dylan6_jdm/jd_lzkj_wxDrawActivity.js",
         "schedule": "1 1 1 1 1",
         "status": 1
     },
     {
-        "id": 719,
+        "id": 931,
         "name": "CJ关注店铺有礼",
         "command": "task 6dylan6_jdm/jd_cjwxShopFollowActivity.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 718,
+        "id": 930,
         "name": "关注有礼（lzkj_loreal）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_followShop.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 717,
+        "id": 929,
         "name": "店铺礼包（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxShopGift.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 716,
+        "id": 928,
         "name": "粉丝互动（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxFansInterActionActivity.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 715,
+        "id": 927,
         "name": "分享有礼（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_share_new.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 714,
+        "id": 926,
         "name": "积分抽奖（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showDrawOne.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 713,
+        "id": 925,
         "name": "分享有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxShareActivity.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 712,
+        "id": 924,
         "name": "邀请好友入会得好礼",
         "command": "task 6dylan6_jdm/jd_prodev.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 711,
+        "id": 923,
         "name": "LZ店铺通用游戏任务-加密",
         "command": "task 6dylan6_jdm/jd_game.js",
         "schedule": "31 1 1 1 1",
         "status": 1
     },
     {
-        "id": 710,
+        "id": 922,
         "name": "邀请关注店铺有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_inviteFollowShop.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 709,
+        "id": 921,
         "name": "店铺抽奖（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_luck_draw.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 708,
+        "id": 920,
         "name": "完善有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_perfectInfo.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 707,
+        "id": 919,
         "name": "邀好友赢大礼",
         "command": "task 6dylan6_jdm/jd_yqhy.py",
         "schedule": "10 10 7 10 *",
         "status": 1
     },
     {
-        "id": 706,
+        "id": 918,
         "name": "生日礼包/会员等级礼包（超级会员）",
         "command": "task 6dylan6_jdm/jd_wxMcLevelAndBirthGifts.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 705,
+        "id": 917,
         "name": "lzkj加购物车抽奖",
         "command": "task 6dylan6_jdm/jd_lzkj_wxCollectionActivity.js",
         "schedule": "1 1 1 1 1",
         "status": 1
     },
     {
-        "id": 704,
+        "id": 916,
         "name": "积分兑换京豆（超级会员）",
         "command": "task 6dylan6_jdm/jd_pointExgBeans.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 703,
+        "id": 915,
         "name": "加购有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_cart.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 702,
+        "id": 914,
         "name": "店铺积分换豆",
         "command": "task 6dylan6_jdm/jd_point_exchange.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 701,
+        "id": 913,
         "name": "幸运抽奖（超级无线V2）",
         "command": "task 6dylan6_jdm/jd_lzkj_v2_draw.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 700,
+        "id": 912,
         "name": "读秒拼手速（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxSecond.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 699,
+        "id": 911,
         "name": "积分兑换E卡（超级会员）",
         "command": "task 6dylan6_jdm/jd_pointExgECard.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 698,
+        "id": 910,
         "name": "批量店铺积分签到（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxSignPoint.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 697,
+        "id": 909,
         "name": "关注商品有礼（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_collect_item.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 696,
+        "id": 908,
         "name": "电脑配件通用ID任务",
         "command": "task 6dylan6_jdm/jd_computer.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 695,
+        "id": 907,
         "name": "wskey转换",
         "command": "task 6dylan6_jdm/jd_wskey.py",
         "schedule": "2 10 20 5 *",
         "status": 1
     },
     {
-        "id": 694,
+        "id": 906,
         "name": "签到有礼（超级无线V2）",
         "command": "task 6dylan6_jdm/jd_lzkj_v2_sign.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 693,
+        "id": 905,
         "name": "店铺签到",
         "command": "task 6dylan6_jdm/jd_dpqd_single.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 692,
+        "id": 904,
         "name": "知识超人（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_know.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 691,
+        "id": 903,
         "name": "幸运抽奖（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showTaskDraw.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 690,
+        "id": 902,
         "name": "关注商品有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_followGoods.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 689,
+        "id": 901,
         "name": "强制入会",
         "command": "task 6dylan6_jdm/jd_OpenCard_Force.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 688,
+        "id": 900,
         "name": "完善有礼（超级无线V2）",
         "command": "task 6dylan6_jdm/jd_lzkj_v2_perfectInfo.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 687,
+        "id": 899,
         "name": "积分兑换实物（超级会员）",
         "command": "task 6dylan6_jdm/jd_pointExgShiWu.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 686,
+        "id": 898,
         "name": "6dy通用抽奖",
         "command": "task 6dylan6_jdm/jd_wx_luckdraw.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 685,
+        "id": 897,
         "name": "店铺刮刮乐（刮一刮）",
         "command": "task 6dylan6_jdm/jd_shop_lottery.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 684,
+        "id": 896,
         "name": "京东抽奖机加购-KR",
         "command": "task 6dylan6_jdm/jd_lottery_cart.js",
         "schedule": "11 11 11 11 *",
         "status": 1
     },
     {
-        "id": 683,
+        "id": 895,
         "name": "分享有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_share.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 682,
+        "id": 894,
         "name": "积分兑换（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_pointsExchange.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 681,
+        "id": 893,
         "name": "幸运大转盘（无线营销）",
         "command": "task 6dylan6_jdm/jd_gzsl_getLottery.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 680,
+        "id": 892,
         "name": "完善信息有礼（超级会员）",
         "command": "task 6dylan6_jdm/jd_completeInfoActivity.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 679,
+        "id": 891,
         "name": "关注有礼（无线营销）",
         "command": "task 6dylan6_jdm/jd_gzsl_contactWare.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 678,
+        "id": 890,
         "name": "店铺礼包（无线营销）",
         "command": "task 6dylan6_jdm/jd_gzsl_shopGiftBag.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 677,
+        "id": 889,
         "name": "无线店铺签到（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_shopSign.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 676,
+        "id": 888,
         "name": "加购物车抽奖",
         "command": "task 6dylan6_jdm/jd_wxCollectionActivity2.js",
         "schedule": "7 7 7 7 7",
         "status": 1
     },
     {
-        "id": 675,
+        "id": 887,
         "name": "关注店铺有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_lkFollowShop.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 674,
+        "id": 886,
         "name": "签到有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_daySign.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 673,
+        "id": 885,
         "name": "店铺抽奖中心（超级无线）",
         "command": "task 6dylan6_jdm/jd_drawCenter.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 672,
+        "id": 884,
         "name": "京东直播互动抽奖",
         "command": "task 6dylan6_jdm/jd_liveLottery.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 671,
+        "id": 883,
         "name": "每日抢好礼（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_daily.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 670,
+        "id": 882,
         "name": "lz分享有礼",
         "command": "task 6dylan6_jdm/jd_share.js",
         "schedule": "1 1 1 1 1",
         "status": 1
     },
     {
-        "id": 669,
+        "id": 881,
         "name": "组队瓜分奖品（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_organizeTeam.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 668,
+        "id": 880,
         "name": "组队瓜分奖品（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_organizeTeam.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 667,
+        "id": 879,
         "name": "游戏赢大礼（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxGameActivity.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 666,
+        "id": 878,
         "name": "邀请入会有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_invite.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 665,
+        "id": 877,
         "name": "jd_joyjd_open通用ID任务",
         "command": "task 6dylan6_jdm/jd_joyjd_open.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 664,
+        "id": 876,
         "name": "幸运抽奖（收藏大师）",
         "command": "task 6dylan6_jdm/jd_txzj_lottery.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 663,
+        "id": 875,
         "name": "入会礼包",
         "command": "task 6dylan6_jdm/jd_opencard_gift.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 662,
+        "id": 874,
         "name": "CJ每日抢好礼通用活动",
         "command": "task 6dylan6_jdm/jd_cjdaily.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 661,
+        "id": 873,
         "name": "账号健康检查（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_healthCheck.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 660,
+        "id": 872,
         "name": "入会开卡领取礼包",
         "command": "task 6dylan6_jdm/jd_OpenCard.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 659,
+        "id": 871,
         "name": "完善有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_lzkj_loreal_perfectInfo.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 658,
+        "id": 870,
         "name": "粉丝福利videofangrowth",
         "command": "task 6dylan6_jdm/jd_fans_videofangrowth.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 657,
+        "id": 869,
         "name": "无线游戏（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxgame.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 656,
+        "id": 868,
         "name": "让福袋飞（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxUnPackingActivity.js",
         "schedule": "6 6 6 6 *",
         "status": 1
     },
     {
-        "id": 655,
+        "id": 867,
         "name": "盖楼有礼（超级无线）",
         "command": "task 6dylan6_jdm/jd_wxBuildActivity.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 654,
+        "id": 866,
         "name": "生日礼包（超级无线V2）",
         "command": "task 6dylan6_jdm/jd_lzkj_v2_birthday.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 653,
+        "id": 865,
         "name": "邀请入会赢好礼（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showInviteJoin.js",
         "schedule": "7 7 7 7 *",
         "status": 1
     },
     {
-        "id": 652,
+        "id": 864,
         "name": "签到有礼（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_showSign.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
         "status": 1
     },
     {
-        "id": 651,
+        "id": 863,
         "name": "批量店铺签到（超级无线/超级会员）",
         "command": "task 6dylan6_jdm/jd_wxSign.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
-        "id": 650,
+        "id": 862,
         "name": "盖楼有礼（京耕）",
         "command": "task 6dylan6_jdm/jd_jinggeng_floor.js",
-        "schedule": "54 11 * * *",
+        "schedule": "31 15 * * *",
+        "status": 1
+    },
+    {
+        "id": 861,
+        "name": "Jd转赚红包_抽奖提现2",
+        "command": "task 6dylan6_jdpro/jd_zzhb_draw_new.js",
+        "schedule": "14 15 * * *",
+        "status": 1
+    },
+    {
+        "id": 860,
+        "name": "CK检测",
+        "command": "task 6dylan6_jdpro/jd_CheckCK.js",
+        "schedule": "6 6 6 6 *",
+        "status": 1
+    },
+    {
+        "id": 858,
+        "name": "玩一玩_下单打卡全额返",
+        "command": "task 6dylan6_jdpro/jd_wyw_dka.js",
+        "schedule": "1 6 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 857,
+        "name": "牛牛乐园合成",
+        "command": "task 6dylan6_jdpro/jx_niuniu_merge.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 856,
+        "name": "种豆得豆任务",
+        "command": "task 6dylan6_jdpro/jd_plantBean.js",
+        "schedule": "15 7-21/2 * * *",
+        "status": 1
+    },
+    {
+        "id": 855,
+        "name": "赚汪贝兑礼品",
+        "command": "task 6dylan6_jdpro/jd_mk_game.js",
+        "schedule": "2 2 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 854,
+        "name": "互动消息检查",
+        "command": "task 6dylan6_jdpro/jd_hdcheck.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 852,
+        "name": "玩一玩竞猜抽奖",
+        "command": "task 6dylan6_jdpro/jd_wyw_cai_draw.js",
+        "schedule": "1 6 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 851,
+        "name": "特价版签到提现新",
+        "command": "task 6dylan6_jdpro/jd_tjqd_new.js",
+        "schedule": "45 5 * * *",
+        "status": 1
+    },
+    {
+        "id": 850,
+        "name": "豆子7天统计",
+        "command": "task 6dylan6_jdpro/jd_beans_7days.py",
+        "schedule": "8 8 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 849,
+        "name": "新农场助力",
+        "command": "task 6dylan6_jdpro/jd_farm_help_new.js",
+        "schedule": "33 6 * * *",
+        "status": 1
+    },
+    {
+        "id": 848,
+        "name": "新农场幸运转盘",
+        "command": "task 6dylan6_jdpro/jd_newfarmlottery.js",
+        "schedule": "26 5,13 * * *",
+        "status": 1
+    },
+    {
+        "id": 847,
+        "name": "东东健康社区收集能量收集",
+        "command": "task 6dylan6_jdpro/jd_health_collect.js",
+        "schedule": "5-45/20 1-5 * * *",
+        "status": 1
+    },
+    {
+        "id": 846,
+        "name": "转盘抽豆",
+        "command": "task 6dylan6_jdpro/jd_pan_lottery.js",
+        "schedule": "1 0,5 * * *",
+        "status": 1
+    },
+    {
+        "id": 845,
+        "name": "秒杀浏览商品领豆",
+        "command": "task 6dylan6_jdpro/jd_seckillViewTask.js",
+        "schedule": "39 0,5 * * *",
+        "status": 1
+    },
+    {
+        "id": 843,
+        "name": "新农场任务",
+        "command": "task 6dylan6_jdpro/jd_fruit_new.js",
+        "schedule": "10 6,12,17 * * *",
+        "status": 1
+    },
+    {
+        "id": 841,
+        "name": "批量取关店铺和商品",
+        "command": "task 6dylan6_jdpro/jd_unsubscribe.js",
+        "schedule": "2 2 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 840,
+        "name": "欢乐淘金",
+        "command": "task 6dylan6_jdpro/jd_fcwb_help.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 839,
+        "name": "批量店铺签到",
+        "command": "task 6dylan6_jdpro/jd_dpqd_sign.js",
+        "schedule": "58 59 23 * * *",
+        "status": 1
+    },
+    {
+        "id": 838,
+        "name": "特价现金挖宝任务",
+        "command": "task 6dylan6_jdpro/jx_fcwb_auto.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 837,
+        "name": "公众号粉丝福利",
+        "command": "task 6dylan6_jdpro/jd_vxFans.js",
+        "schedule": "40 9 * * *",
+        "status": 1
+    },
+    {
+        "id": 836,
+        "name": "东东乐园",
+        "command": "task 6dylan6_jdpro/jd_ddly.js",
+        "schedule": "35 7 * * *",
+        "status": 1
+    },
+    {
+        "id": 835,
+        "name": "京豆详情统计",
+        "command": "task 6dylan6_jdpro/jd_bean_info.js",
+        "schedule": "2 20 14 12 *",
+        "status": 1
+    },
+    {
+        "id": 834,
+        "name": "重复任务优化",
+        "command": "task 6dylan6_jdpro/jd_taskop.py",
+        "schedule": "15 2 * * *",
+        "status": 1
+    },
+    {
+        "id": 832,
+        "name": "京东快递",
+        "command": "task 6dylan6_jdpro/jd_kuaid.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 831,
+        "name": "汪汪庄园任务",
+        "command": "task 6dylan6_jdpro/jd_joypark_task.js",
+        "schedule": "38 8,13 * * *",
+        "status": 1
+    },
+    {
+        "id": 830,
+        "name": "关闭免密支付",
+        "command": "task 6dylan6_jdpro/jd_pay_contract.js",
+        "schedule": "35 20 * * 5",
+        "status": 1
+    },
+    {
+        "id": 829,
+        "name": "拉库|更新问题修复",
+        "command": "task 6dylan6_jdpro/jd_pullfix.py",
+        "schedule": "15 0 * * *",
+        "status": 1
+    },
+    {
+        "id": 828,
+        "name": "抽现金提现统计",
+        "command": "task 6dylan6_jdpro/jd_txtotal.js",
+        "schedule": "1 1 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 827,
+        "name": "看视频赚现金-浏览",
+        "command": "task 6dylan6_jdpro/jd_video_view.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 826,
+        "name": "wskey本地转换",
+        "command": "task 6dylan6_jdpro/jd_wsck.py",
+        "schedule": "57 21,9 * * *",
+        "status": 1
+    },
+    {
+        "id": 825,
+        "name": "领京豆签到",
+        "command": "task 6dylan6_jdpro/jd_signbeanact_.js",
+        "schedule": "38 0,7 * * *",
+        "status": 1
+    },
+    {
+        "id": 824,
+        "name": "搜集互助码",
+        "command": "task 6dylan6_jdpro/jd_sharecode.sh",
+        "schedule": "15 0 * * *",
+        "status": 1
+    },
+    {
+        "id": 823,
+        "name": "积分换话费",
+        "command": "task 6dylan6_jdpro/jd_dwapp.js",
+        "schedule": "10 1,14 * * *",
+        "status": 1
+    },
+    {
+        "id": 822,
+        "name": "快速缓存token",
+        "command": "task 6dylan6_jdpro/jd_wxtoken_m.js",
+        "schedule": "38 11 11 11 *",
+        "status": 1
+    },
+    {
+        "id": 821,
+        "name": "玩一玩_指定助力",
+        "command": "task 6dylan6_jdpro/jd_wyw_help.js",
+        "schedule": "1 6 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 820,
+        "name": "京豆红包雨",
+        "command": "task 6dylan6_jdpro/jd_redRain2021.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 819,
+        "name": "种豆得豆内部互助",
+        "command": "task 6dylan6_jdpro/jd_plantBean_help.js",
+        "schedule": "33 3,16 * * *",
+        "status": 1
+    },
+    {
+        "id": 818,
+        "name": "做任务赚汪贝",
+        "command": "task 6dylan6_jdpro/jd_zwb.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 817,
+        "name": "超级无线店铺签到（积分）",
+        "command": "task 6dylan6_jdpro/jd_wxsign_jf.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 816,
+        "name": "快递领卷",
+        "command": "task 6dylan6_jdpro/jd_jdkdcoupon.js",
+        "schedule": "5 10 * * *",
+        "status": 1
+    },
+    {
+        "id": 815,
+        "name": "东东农场-助力",
+        "command": "task 6dylan6_jdpro/jd_farm_help.js",
+        "schedule": "20 2,6,11 * * *",
+        "status": 1
+    },
+    {
+        "id": 814,
+        "name": "农场自动兑换种植",
+        "command": "task 6dylan6_jdpro/jd_fruit_plant.js",
+        "schedule": "8 8 8 11 *",
+        "status": 1
+    },
+    {
+        "id": 813,
+        "name": "超级品牌殿堂",
+        "command": "task 6dylan6_jdpro/jd_ppdt_.js",
+        "schedule": "18 19 * * 2,5",
+        "status": 1
+    },
+    {
+        "id": 812,
+        "name": "东东健康社区",
+        "command": "task 6dylan6_jdpro/jd_health.js",
+        "schedule": "33 0,6,22 * * *",
+        "status": 1
+    },
+    {
+        "id": 811,
+        "name": "欢乐淘金（发财挖宝）任务",
+        "command": "task 6dylan6_jdpro/jd_fcwb_auto.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 810,
+        "name": "超级抓抓机",
+        "command": "task 6dylan6_jdpro/jd_cjzzj.js",
+        "schedule": "0 6,20 * * *",
+        "status": 1
+    },
+    {
+        "id": 809,
+        "name": "摇钱树",
+        "command": "task 6dylan6_jdpro/jd_yqs.js",
+        "schedule": "46 3,15 * * *",
+        "status": 1
+    },
+    {
+        "id": 808,
+        "name": "口令转链接",
+        "command": "task 6dylan6_jdpro/jd_code2url.js",
+        "schedule": "10 10 10 10 *",
+        "status": 1
+    },
+    {
+        "id": 807,
+        "name": "小程序超级省",
+        "command": "task 6dylan6_jdpro/jd_wechat_ttlzq.js",
+        "schedule": "35 4,16 * * *",
+        "status": 1
+    },
+    {
+        "id": 806,
+        "name": "金融签到",
+        "command": "task 6dylan6_jdpro/jd_jrsign.js",
+        "schedule": "50 6 * * *",
+        "status": 1
+    },
+    {
+        "id": 805,
+        "name": "明星送好礼",
+        "command": "task 6dylan6_jdpro/jd_superBrandStar_.js",
+        "schedule": "2 2 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 804,
+        "name": "金融捕鱼助力",
+        "command": "task 6dylan6_jdpro/jd_jr_fish_help.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 803,
+        "name": "玩一玩_任务",
+        "command": "task 6dylan6_jdpro/jd_wanyiwan.js",
+        "schedule": "23 5,10 * * *",
+        "status": 1
+    },
+    {
+        "id": 802,
+        "name": "大牌浏览店铺",
+        "command": "task 6dylan6_jdpro/jd_dplhbshop.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 801,
+        "name": "超级无线店铺签到",
+        "command": "task 6dylan6_jdpro/jd_sevenDay.js",
+        "schedule": "1 1 11 1 *",
+        "status": 1
+    },
+    {
+        "id": 800,
+        "name": "一键价保",
+        "command": "task 6dylan6_jdpro/jd_OnceApply.js",
+        "schedule": "55 11 * * *",
+        "status": 1
+    },
+    {
+        "id": 799,
+        "name": "服装抽奖",
+        "command": "task 6dylan6_jdpro/jd_clothing_draw.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 798,
+        "name": "宠汪汪-双人赛",
+        "command": "task 6dylan6_jdpro/jd_joymatch.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 797,
+        "name": "wskey转换",
+        "command": "task 6dylan6_jdpro/jd_wskey.py",
+        "schedule": "2 10 20 5 *",
+        "status": 1
+    },
+    {
+        "id": 796,
+        "name": "单个店铺签到",
+        "command": "task 6dylan6_jdpro/jd_dpqd_single.js",
+        "schedule": "7 7 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 795,
+        "name": "批量店铺签到（活动查询）",
+        "command": "task 6dylan6_jdpro/jd_dpqd_main.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 794,
+        "name": "健康能量任务",
+        "command": "task 6dylan6_jdpro/jd_health_task.js",
+        "schedule": "12 5,14 * * *",
+        "status": 1
+    },
+    {
+        "id": 793,
+        "name": "牛牛乐园任务",
+        "command": "task 6dylan6_jdpro/jx_joypark_task.js",
+        "schedule": "12 10,12 * * *",
+        "status": 1
+    },
+    {
+        "id": 792,
+        "name": "每日签到得豆",
+        "command": "task 6dylan6_jdpro/jd_dailysign.js",
+        "schedule": "1 0,18 * * *",
+        "status": 1
+    },
+    {
+        "id": 791,
+        "name": "V你50超市卡",
+        "command": "task 6dylan6_jdpro/jd_mktV50_.js",
+        "schedule": "5 0,16 * * 5",
+        "status": 1
+    },
+    {
+        "id": 790,
+        "name": "Jx特价抽现金_抽奖提现",
+        "command": "task 6dylan6_jdpro/jx_cxj_draw.js",
+        "schedule": "8 8 29 10 *",
+        "status": 1
+    },
+    {
+        "id": 789,
+        "name": "Jd转赚红包2",
+        "command": "task 6dylan6_jdpro/jd_zzhb_new.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 786,
+        "name": "东东农场-删好友奖励",
+        "command": "task 6dylan6_jdpro/jd_farm_del.js",
+        "schedule": "8 1 * * *",
+        "status": 1
+    },
+    {
+        "id": 785,
+        "name": "领京豆-升级赚豆",
+        "command": "task 6dylan6_jdpro/jd_bean_home.js",
+        "schedule": "45 2,14 * * *",
+        "status": 1
+    },
+    {
+        "id": 784,
+        "name": "京东调研问卷",
+        "command": "task 6dylan6_jdpro/jd_insight.js",
+        "schedule": "35 9 * * *",
+        "status": 1
+    },
+    {
+        "id": 783,
+        "name": "玩一玩-摇一摇",
+        "command": "task 6dylan6_jdpro/jd_wyw_y1y.js",
+        "schedule": "30 19 * * *",
+        "status": 1
+    },
+    {
+        "id": 782,
+        "name": "微信签到红包",
+        "command": "task 6dylan6_jdpro/jd_wxSignRed.js",
+        "schedule": "2 3 * * *",
+        "status": 1
+    },
+    {
+        "id": 781,
+        "name": "QQ星系牧场",
+        "command": "task 6dylan6_jdpro/jd_qqxing.js",
+        "schedule": "45 0-23/6 * * *",
+        "status": 1
+    },
+    {
+        "id": 780,
+        "name": "玩一玩-翻翻乐",
+        "command": "task 6dylan6_jdpro/jd_wyw_ffl.js",
+        "schedule": "35 0-23/3 * * *",
+        "status": 1
+    },
+    {
+        "id": 779,
+        "name": "京东直播互动抽奖",
+        "command": "task 6dylan6_jdpro/jd_liveLottery.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 778,
+        "name": "依赖安装",
+        "command": "task 6dylan6_jdpro/jd_indeps.sh",
+        "schedule": "0 8 5 5 *",
+        "status": 1
+    },
+    {
+        "id": 777,
+        "name": "东东农场-任务",
+        "command": "task 6dylan6_jdpro/jd_fruit.js",
+        "schedule": "15 3,13,18 * * *",
+        "status": 1
+    },
+    {
+        "id": 776,
+        "name": "清空购物车",
+        "command": "task 6dylan6_jdpro/jd_rmvcart.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 775,
+        "name": "特价版领红包",
+        "command": "task 6dylan6_jdpro/jd_tjlhb.js",
+        "schedule": "3 3,15 * * *",
+        "status": 1
+    },
+    {
+        "id": 774,
+        "name": "看视频赚现金-任务",
+        "command": "task 6dylan6_jdpro/jd_video_task.js",
+        "schedule": "45 7 * * *",
+        "status": 1
+    },
+    {
+        "id": 773,
+        "name": "特价现金挖宝助力",
+        "command": "task 6dylan6_jdpro/jx_fcwb_help.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 772,
+        "name": "玩一玩兑换",
+        "command": "task 6dylan6_jdpro/jd_wyw_award.js",
+        "schedule": "1 6 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 771,
+        "name": "京豆红包雨",
+        "command": "task 6dylan6_jdpro/jd_redrain_hby.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 770,
+        "name": "Jx特价抽现金",
+        "command": "task 6dylan6_jdpro/jx_cxjhelp.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 769,
+        "name": "汪汪庄园合成",
+        "command": "task 6dylan6_jdpro/jd_wwmanor_merge.js",
+        "schedule": "7 7 7 7 *",
+        "status": 1
+    },
+    {
+        "id": 768,
+        "name": "批量删垃圾券",
+        "command": "task 6dylan6_jdpro/jd_delLjq.js",
+        "schedule": "2 2 29 2 *",
+        "status": 1
+    },
+    {
+        "id": 767,
+        "name": "购物返豆领取",
+        "command": "task 6dylan6_jdpro/jd_gwfd.js",
+        "schedule": "29 12 * * *",
+        "status": 1
+    },
+    {
+        "id": 766,
+        "name": "带图评价晒单",
+        "command": "task 6dylan6_jdpro/jd_AutoEval.js",
+        "schedule": "3 12 3 12 *",
+        "status": 1
+    },
+    {
+        "id": 765,
+        "name": "京东资产统计",
+        "command": "task 6dylan6_jdpro/jd_bean_change.js",
+        "schedule": "28 8,21 * * *",
+        "status": 1
+    },
+    {
+        "id": 649,
+        "name": "新东东农场助力指定次数",
+        "command": "task shufflewzc_faker3_main/jd_XinFarm_helpnum.js",
+        "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 648,
+        "name": "8.3-8.13 Plus尊享 宠爱驾到",
+        "command": "task shufflewzc_faker3_main/jd_opencard_puls.js",
+        "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
@@ -1351,10 +2016,10 @@
         "status": 1
     },
     {
-        "id": 645,
-        "name": "大牌0801",
-        "command": "task 6dylan6_jdpro/jd_dplh0801.js",
-        "schedule": "20 9 1 8 *",
+        "id": 644,
+        "name": "大牌联合0801",
+        "command": "task shufflewzc_faker3_main/jd_dplh0801.js",
+        "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
@@ -1362,13 +2027,6 @@
         "name": "权益红包",
         "command": "task shufflewzc_faker3_main/jd_qyhb.js",
         "schedule": "28 12 * * *",
-        "status": 1
-    },
-    {
-        "id": 642,
-        "name": "夺金刮刮乐_助力",
-        "command": "task 6dylan6_jdpro/jd_djggl_help.js",
-        "schedule": "9 12 * * *",
         "status": 1
     },
     {
@@ -1383,13 +2041,6 @@
         "name": "夺金刮刮乐助力",
         "command": "task shufflewzc_faker3_main/jd_duojin_help.js",
         "schedule": "36 2 2,14 * * *",
-        "status": 1
-    },
-    {
-        "id": 636,
-        "name": "大牌0725",
-        "command": "task 6dylan6_jdpro/jd_dplh0725.js",
-        "schedule": "20 9 25 7 *",
         "status": 1
     },
     {
@@ -1411,13 +2062,6 @@
         "name": "7.24-7.31 为热爱助威  赢惊喜好礼",
         "command": "task shufflewzc_faker3_main/jd_opencard_0724.js",
         "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 545,
-        "name": "V你50超市卡",
-        "command": "task 6dylan6_jdpro/jd_mktV50_.js",
-        "schedule": "4 0,16 * * 5",
         "status": 1
     },
     {
@@ -1729,594 +2373,6 @@
         "status": 1
     },
     {
-        "id": 376,
-        "name": "Jd转赚红包_抽奖提现2",
-        "command": "task 6dylan6_jdpro/jd_zzhb_draw_new.js",
-        "schedule": "14 15 * * *",
-        "status": 1
-    },
-    {
-        "id": 375,
-        "name": "CK检测",
-        "command": "task 6dylan6_jdpro/jd_CheckCK.js",
-        "schedule": "6 6 6 6 *",
-        "status": 1
-    },
-    {
-        "id": 374,
-        "name": "玩一玩_下单打卡全额返",
-        "command": "task 6dylan6_jdpro/jd_wyw_dka.js",
-        "schedule": "1 6 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 373,
-        "name": "牛牛乐园合成",
-        "command": "task 6dylan6_jdpro/jx_niuniu_merge.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 371,
-        "name": "赚汪贝兑礼品",
-        "command": "task 6dylan6_jdpro/jd_mk_game.js",
-        "schedule": "2 2 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 370,
-        "name": "互动消息检查",
-        "command": "task 6dylan6_jdpro/jd_hdcheck.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 368,
-        "name": "玩一玩竞猜抽奖",
-        "command": "task 6dylan6_jdpro/jd_wyw_cai_draw.js",
-        "schedule": "1 6 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 367,
-        "name": "特价版签到提现新",
-        "command": "task 6dylan6_jdpro/jd_tjqd_new.js",
-        "schedule": "45 5 * * *",
-        "status": 1
-    },
-    {
-        "id": 366,
-        "name": "豆子7天统计",
-        "command": "task 6dylan6_jdpro/jd_beans_7days.py",
-        "schedule": "8 8 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 365,
-        "name": "新农场助力",
-        "command": "task 6dylan6_jdpro/jd_farm_help_new.js",
-        "schedule": "33 6 * * *",
-        "status": 1
-    },
-    {
-        "id": 364,
-        "name": "新农场幸运转盘",
-        "command": "task 6dylan6_jdpro/jd_newfarmlottery.js",
-        "schedule": "26 5,13 * * *",
-        "status": 1
-    },
-    {
-        "id": 363,
-        "name": "东东健康社区收集能量收集",
-        "command": "task 6dylan6_jdpro/jd_health_collect.js",
-        "schedule": "5-45/20 1-5 * * *",
-        "status": 1
-    },
-    {
-        "id": 362,
-        "name": "转盘抽豆",
-        "command": "task 6dylan6_jdpro/jd_pan_lottery.js",
-        "schedule": "1 0,5 * * *",
-        "status": 1
-    },
-    {
-        "id": 361,
-        "name": "秒杀浏览商品领豆",
-        "command": "task 6dylan6_jdpro/jd_seckillViewTask.js",
-        "schedule": "39 0,5 * * *",
-        "status": 1
-    },
-    {
-        "id": 360,
-        "name": "京豆国际频道任务",
-        "command": "task 6dylan6_jdpro/jd_global_task.js",
-        "schedule": "15 1 * * *",
-        "status": 1
-    },
-    {
-        "id": 359,
-        "name": "新农场任务",
-        "command": "task 6dylan6_jdpro/jd_fruit_new.js",
-        "schedule": "10 6,12,17 * * *",
-        "status": 1
-    },
-    {
-        "id": 358,
-        "name": "批量取关店铺和商品",
-        "command": "task 6dylan6_jdpro/jd_unsubscribe.js",
-        "schedule": "2 2 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 357,
-        "name": "欢乐淘金",
-        "command": "task 6dylan6_jdpro/jd_fcwb_help.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 356,
-        "name": "批量店铺签到",
-        "command": "task 6dylan6_jdpro/jd_dpqd_sign.js",
-        "schedule": "58 59 23 * * *",
-        "status": 1
-    },
-    {
-        "id": 355,
-        "name": "特价现金挖宝任务",
-        "command": "task 6dylan6_jdpro/jx_fcwb_auto.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 354,
-        "name": "公众号粉丝福利",
-        "command": "task 6dylan6_jdpro/jd_vxFans.js",
-        "schedule": "40 9 * * *",
-        "status": 1
-    },
-    {
-        "id": 353,
-        "name": "东东乐园",
-        "command": "task 6dylan6_jdpro/jd_ddly.js",
-        "schedule": "35 7 * * *",
-        "status": 1
-    },
-    {
-        "id": 352,
-        "name": "京豆详情统计",
-        "command": "task 6dylan6_jdpro/jd_bean_info.js",
-        "schedule": "2 20 14 12 *",
-        "status": 1
-    },
-    {
-        "id": 351,
-        "name": "重复任务优化",
-        "command": "task 6dylan6_jdpro/jd_taskop.py",
-        "schedule": "15 2 * * *",
-        "status": 1
-    },
-    {
-        "id": 349,
-        "name": "京东快递",
-        "command": "task 6dylan6_jdpro/jd_kuaid.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 348,
-        "name": "汪汪庄园任务",
-        "command": "task 6dylan6_jdpro/jd_joypark_task.js",
-        "schedule": "38 8,13 * * *",
-        "status": 1
-    },
-    {
-        "id": 347,
-        "name": "关闭免密支付",
-        "command": "task 6dylan6_jdpro/jd_pay_contract.js",
-        "schedule": "35 20 * * 5",
-        "status": 1
-    },
-    {
-        "id": 346,
-        "name": "拉库|更新问题修复",
-        "command": "task 6dylan6_jdpro/jd_pullfix.py",
-        "schedule": "15 0 * * *",
-        "status": 1
-    },
-    {
-        "id": 345,
-        "name": "抽现金提现统计",
-        "command": "task 6dylan6_jdpro/jd_txtotal.js",
-        "schedule": "1 1 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 343,
-        "name": "wskey本地转换",
-        "command": "task 6dylan6_jdpro/jd_wsck.py",
-        "schedule": "57 21,9 * * *",
-        "status": 1
-    },
-    {
-        "id": 342,
-        "name": "领京豆签到",
-        "command": "task 6dylan6_jdpro/jd_signbeanact_.js",
-        "schedule": "38 0,7 * * *",
-        "status": 1
-    },
-    {
-        "id": 341,
-        "name": "搜集互助码",
-        "command": "task 6dylan6_jdpro/jd_sharecode.sh",
-        "schedule": "15 0 * * *",
-        "status": 1
-    },
-    {
-        "id": 340,
-        "name": "积分换话费",
-        "command": "task 6dylan6_jdpro/jd_dwapp.js",
-        "schedule": "10 1,14 * * *",
-        "status": 1
-    },
-    {
-        "id": 339,
-        "name": "快速缓存token",
-        "command": "task 6dylan6_jdpro/jd_wxtoken_m.js",
-        "schedule": "38 11 11 11 *",
-        "status": 1
-    },
-    {
-        "id": 338,
-        "name": "京豆红包雨",
-        "command": "task 6dylan6_jdpro/jd_redRain2021.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 337,
-        "name": "种豆得豆内部互助",
-        "command": "task 6dylan6_jdpro/jd_plantBean_help.js",
-        "schedule": "33 3,16 * * *",
-        "status": 1
-    },
-    {
-        "id": 336,
-        "name": "做任务赚汪贝",
-        "command": "task 6dylan6_jdpro/jd_zwb.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 335,
-        "name": "超级无线店铺签到（积分）",
-        "command": "task 6dylan6_jdpro/jd_wxsign_jf.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 334,
-        "name": "快递领卷",
-        "command": "task 6dylan6_jdpro/jd_jdkdcoupon.js",
-        "schedule": "5 10 * * *",
-        "status": 1
-    },
-    {
-        "id": 333,
-        "name": "东东农场-助力",
-        "command": "task 6dylan6_jdpro/jd_farm_help.js",
-        "schedule": "20 2,6,11 * * *",
-        "status": 1
-    },
-    {
-        "id": 332,
-        "name": "农场自动兑换种植",
-        "command": "task 6dylan6_jdpro/jd_fruit_plant.js",
-        "schedule": "8 8 8 11 *",
-        "status": 1
-    },
-    {
-        "id": 331,
-        "name": "超级品牌殿堂",
-        "command": "task 6dylan6_jdpro/jd_ppdt_.js",
-        "schedule": "18 19 * * 2,5",
-        "status": 1
-    },
-    {
-        "id": 330,
-        "name": "东东健康社区",
-        "command": "task 6dylan6_jdpro/jd_health.js",
-        "schedule": "33 0,6,22 * * *",
-        "status": 1
-    },
-    {
-        "id": 329,
-        "name": "欢乐淘金（发财挖宝）任务",
-        "command": "task 6dylan6_jdpro/jd_fcwb_auto.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 328,
-        "name": "超级抓抓机",
-        "command": "task 6dylan6_jdpro/jd_cjzzj.js",
-        "schedule": "0 6,20 * * *",
-        "status": 1
-    },
-    {
-        "id": 327,
-        "name": "摇钱树",
-        "command": "task 6dylan6_jdpro/jd_yqs.js",
-        "schedule": "46 3,15 * * *",
-        "status": 1
-    },
-    {
-        "id": 326,
-        "name": "口令转链接",
-        "command": "task 6dylan6_jdpro/jd_code2url.js",
-        "schedule": "10 10 10 10 *",
-        "status": 1
-    },
-    {
-        "id": 325,
-        "name": "小程序超级省",
-        "command": "task 6dylan6_jdpro/jd_wechat_ttlzq.js",
-        "schedule": "35 4,16 * * *",
-        "status": 1
-    },
-    {
-        "id": 324,
-        "name": "金融签到",
-        "command": "task 6dylan6_jdpro/jd_jrsign.js",
-        "schedule": "50 6 * * *",
-        "status": 1
-    },
-    {
-        "id": 323,
-        "name": "明星送好礼",
-        "command": "task 6dylan6_jdpro/jd_superBrandStar_.js",
-        "schedule": "2 2 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 322,
-        "name": "金融捕鱼助力",
-        "command": "task 6dylan6_jdpro/jd_jr_fish_help.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 320,
-        "name": "大牌浏览店铺",
-        "command": "task 6dylan6_jdpro/jd_dplhbshop.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 319,
-        "name": "超级无线店铺签到",
-        "command": "task 6dylan6_jdpro/jd_sevenDay.js",
-        "schedule": "1 1 11 1 *",
-        "status": 1
-    },
-    {
-        "id": 318,
-        "name": "一键价保",
-        "command": "task 6dylan6_jdpro/jd_OnceApply.js",
-        "schedule": "55 11 * * *",
-        "status": 1
-    },
-    {
-        "id": 317,
-        "name": "服装抽奖",
-        "command": "task 6dylan6_jdpro/jd_clothing_draw.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 316,
-        "name": "宠汪汪-双人赛",
-        "command": "task 6dylan6_jdpro/jd_joymatch.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 315,
-        "name": "wskey转换",
-        "command": "task 6dylan6_jdpro/jd_wskey.py",
-        "schedule": "2 10 20 5 *",
-        "status": 1
-    },
-    {
-        "id": 314,
-        "name": "单个店铺签到",
-        "command": "task 6dylan6_jdpro/jd_dpqd_single.js",
-        "schedule": "7 7 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 311,
-        "name": "健康能量任务",
-        "command": "task 6dylan6_jdpro/jd_health_task.js",
-        "schedule": "12 5,14 * * *",
-        "status": 1
-    },
-    {
-        "id": 310,
-        "name": "牛牛乐园任务",
-        "command": "task 6dylan6_jdpro/jx_joypark_task.js",
-        "schedule": "12 10,12 * * *",
-        "status": 1
-    },
-    {
-        "id": 309,
-        "name": "每日签到得豆",
-        "command": "task 6dylan6_jdpro/jd_dailysign.js",
-        "schedule": "1 0,18 * * *",
-        "status": 1
-    },
-    {
-        "id": 308,
-        "name": "Jx特价抽现金_抽奖提现",
-        "command": "task 6dylan6_jdpro/jx_cxj_draw.js",
-        "schedule": "8 8 29 10 *",
-        "status": 1
-    },
-    {
-        "id": 307,
-        "name": "Jd转赚红包2",
-        "command": "task 6dylan6_jdpro/jd_zzhb_new.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 305,
-        "name": "东东农场-删好友奖励",
-        "command": "task 6dylan6_jdpro/jd_farm_del.js",
-        "schedule": "8 1 * * *",
-        "status": 1
-    },
-    {
-        "id": 304,
-        "name": "领京豆-升级赚豆",
-        "command": "task 6dylan6_jdpro/jd_bean_home.js",
-        "schedule": "45 2,14 * * *",
-        "status": 1
-    },
-    {
-        "id": 303,
-        "name": "京东调研问卷",
-        "command": "task 6dylan6_jdpro/jd_insight.js",
-        "schedule": "35 9 * * *",
-        "status": 1
-    },
-    {
-        "id": 302,
-        "name": "玩一玩-摇一摇",
-        "command": "task 6dylan6_jdpro/jd_wyw_y1y.js",
-        "schedule": "30 19 * * *",
-        "status": 1
-    },
-    {
-        "id": 301,
-        "name": "微信签到红包-加密",
-        "command": "task 6dylan6_jdpro/jd_wxSignRed.js",
-        "schedule": "2 2 * * *",
-        "status": 1
-    },
-    {
-        "id": 300,
-        "name": "QQ星系牧场",
-        "command": "task 6dylan6_jdpro/jd_qqxing.js",
-        "schedule": "45 0-23/6 * * *",
-        "status": 1
-    },
-    {
-        "id": 299,
-        "name": "玩一玩-翻翻乐",
-        "command": "task 6dylan6_jdpro/jd_wyw_ffl.js",
-        "schedule": "35 0-23/3 * * *",
-        "status": 1
-    },
-    {
-        "id": 298,
-        "name": "京东直播互动抽奖",
-        "command": "task 6dylan6_jdpro/jd_liveLottery.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 297,
-        "name": "依赖安装",
-        "command": "task 6dylan6_jdpro/jd_indeps.sh",
-        "schedule": "0 8 5 5 *",
-        "status": 1
-    },
-    {
-        "id": 296,
-        "name": "东东农场-任务",
-        "command": "task 6dylan6_jdpro/jd_fruit.js",
-        "schedule": "15 3,13,18 * * *",
-        "status": 1
-    },
-    {
-        "id": 295,
-        "name": "清空购物车",
-        "command": "task 6dylan6_jdpro/jd_rmvcart.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 294,
-        "name": "特价版领红包",
-        "command": "task 6dylan6_jdpro/jd_tjlhb.js",
-        "schedule": "3 3,15 * * *",
-        "status": 1
-    },
-    {
-        "id": 292,
-        "name": "特价现金挖宝助力",
-        "command": "task 6dylan6_jdpro/jx_fcwb_help.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 291,
-        "name": "玩一玩兑换",
-        "command": "task 6dylan6_jdpro/jd_wyw_award.js",
-        "schedule": "1 6 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 290,
-        "name": "京豆红包雨",
-        "command": "task 6dylan6_jdpro/jd_redrain_hby.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 289,
-        "name": "Jx特价抽现金",
-        "command": "task 6dylan6_jdpro/jx_cxjhelp.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 288,
-        "name": "汪汪庄园合成",
-        "command": "task 6dylan6_jdpro/jd_wwmanor_merge.js",
-        "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 287,
-        "name": "批量删垃圾券",
-        "command": "task 6dylan6_jdpro/jd_delLjq.js",
-        "schedule": "2 2 29 2 *",
-        "status": 1
-    },
-    {
-        "id": 286,
-        "name": "购物返豆领取",
-        "command": "task 6dylan6_jdpro/jd_gwfd.js",
-        "schedule": "45 17 * * *",
-        "status": 1
-    },
-    {
-        "id": 285,
-        "name": "带图评价晒单",
-        "command": "task 6dylan6_jdpro/jd_AutoEval.js",
-        "schedule": "3 12 3 12 *",
-        "status": 1
-    },
-    {
-        "id": 284,
-        "name": "京东资产统计",
-        "command": "task 6dylan6_jdpro/jd_bean_change.js",
-        "schedule": "28 8,21 * * *",
-        "status": 1
-    },
-    {
         "id": 283,
         "name": "惊喜红包一次性",
         "command": "task shufflewzc_faker3_main/jd_Surprise_Red.js",
@@ -2380,13 +2436,6 @@
         "status": 1
     },
     {
-        "id": 268,
-        "name": "幸运抽奖（超级无线）",
-        "command": "task shufflewzc_faker3_main/jd_lzkj_draw.js",
-        "schedule": "52 1 * * *",
-        "status": 1
-    },
-    {
         "id": 267,
         "name": "每日抢好礼（超级无线）",
         "command": "task shufflewzc_faker3_main/jd_lzkj_dailyGrabs.js",
@@ -2412,13 +2461,6 @@
         "name": "牛牛乐园合成",
         "command": "task shufflewzc_faker3_main/jx_niuniu_merge.js",
         "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 262,
-        "name": "赚汪贝兑礼品",
-        "command": "task shufflewzc_faker3_main/jd_mk_game.js",
-        "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
@@ -2653,13 +2695,6 @@
         "status": 1
     },
     {
-        "id": 210,
-        "name": "京东版-汪汪庄园助力",
-        "command": "task shufflewzc_faker3_main/jd_wwzy_help.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
         "id": 209,
         "name": "LZ加购有礼通用活动",
         "command": "task shufflewzc_faker3_main/jd_lzaddCart.js",
@@ -2807,13 +2842,6 @@
         "status": 1
     },
     {
-        "id": 184,
-        "name": "京东版-汪汪庄园",
-        "command": "task shufflewzc_faker3_main/jd_wwzy.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
         "id": 183,
         "name": "7.5-7.12 夏日特惠 大牌联合",
         "command": "task shufflewzc_faker3_main/jd_opencard0705.js",
@@ -2884,6 +2912,13 @@
         "status": 1
     },
     {
+        "id": 168,
+        "name": "京东国际任务",
+        "command": "task shufflewzc_faker3_main/jd_gmart.js",
+        "schedule": "15 1,17 * * *",
+        "status": 1
+    },
+    {
         "id": 167,
         "name": "删除优惠券",
         "command": "task shufflewzc_faker3_main/jd_clean_coupon.js",
@@ -2895,13 +2930,6 @@
         "name": "微定制瓜分福袋-加密",
         "command": "task shufflewzc_faker3_main/jd_wdzfd.js",
         "schedule": "7 7 7 7 *",
-        "status": 1
-    },
-    {
-        "id": 165,
-        "name": "特价版-牛牛乐园助力",
-        "command": "task shufflewzc_faker3_main/jd_tj_nnly_help.js",
-        "schedule": "1 1 1 1 *",
         "status": 1
     },
     {
@@ -2940,6 +2968,13 @@
         "status": 1
     },
     {
+        "id": 156,
+        "name": "清空购物车（H5版）",
+        "command": "task shufflewzc_faker3_main/jd_clean_cart.js",
+        "schedule": "0 6 * * *",
+        "status": 1
+    },
+    {
         "id": 155,
         "name": "欢乐淘金（发财挖宝）任务",
         "command": "task shufflewzc_faker3_main/jd_fcwb_auto.js",
@@ -2972,6 +3007,13 @@
         "name": "京东赚赚兑换",
         "command": "task shufflewzc_faker3_main/jd_jdzz_dh.js",
         "schedule": "11 11 11 11 *",
+        "status": 1
+    },
+    {
+        "id": 149,
+        "name": "逛视频刷视频",
+        "command": "task shufflewzc_faker3_main/jd_video_shua.js",
+        "schedule": "0 7 * * *",
         "status": 1
     },
     {
@@ -3031,13 +3073,6 @@
         "status": 1
     },
     {
-        "id": 136,
-        "name": "新转赚红包助力",
-        "command": "task shufflewzc_faker3_main/jd_zzhb_new_help.js",
-        "schedule": "0 0,12 * * *",
-        "status": 1
-    },
-    {
         "id": 135,
         "name": "PRO抽奖机任务",
         "command": "task shufflewzc_faker3_main/jd_pro_lottery_task.js",
@@ -3056,6 +3091,13 @@
         "name": "轻松赚豆",
         "command": "task shufflewzc_faker3_main/jd_daily_bean.js",
         "schedule": "31 5,18 * * *",
+        "status": 1
+    },
+    {
+        "id": 130,
+        "name": "金融捕鱼助力",
+        "command": "task shufflewzc_faker3_main/jd_jr_fish_help.js",
+        "schedule": "2 15 * * *",
         "status": 1
     },
     {
@@ -3125,13 +3167,6 @@
         "id": 119,
         "name": "7.1-7.15 轻松育儿集卡礼赠送卡片",
         "command": "task shufflewzc_faker3_main/jd_mybbphdyh_give.js",
-        "schedule": "1 1 1 1 *",
-        "status": 1
-    },
-    {
-        "id": 118,
-        "name": "服装抽奖",
-        "command": "task shufflewzc_faker3_main/jd_clothing_draw.js",
         "schedule": "1 1 1 1 *",
         "status": 1
     },
@@ -3217,13 +3252,6 @@
         "name": "分享有礼（超级无线）",
         "command": "task shufflewzc_faker3_main/jd_lzkj_loreal_share.js",
         "schedule": "52 1 * * *",
-        "status": 1
-    },
-    {
-        "id": 95,
-        "name": "新版玩一玩之摇一摇抽奖",
-        "command": "task shufflewzc_faker3_main/jd_wyw_draw.js",
-        "schedule": "29 43 19 * * *",
         "status": 1
     },
     {
@@ -3395,6 +3423,13 @@
         "status": 1
     },
     {
+        "id": 69,
+        "name": "逛视频任务",
+        "command": "task shufflewzc_faker3_main/jd_video_task.js",
+        "schedule": "20 7 * * *",
+        "status": 1
+    },
+    {
         "id": 67,
         "name": "幸运抽奖（收藏大师）",
         "command": "task shufflewzc_faker3_main/jd_txzj_lottery.js",
@@ -3413,6 +3448,13 @@
         "name": "超市卡抽奖",
         "command": "task shufflewzc_faker3_main/jd_supermarket_draw.js",
         "schedule": "1 1 1 1 *",
+        "status": 1
+    },
+    {
+        "id": 63,
+        "name": "特价现金挖宝助力",
+        "command": "task shufflewzc_faker3_main/jx_fcwb_help.js",
+        "schedule": "1 13 * * *",
         "status": 1
     },
     {

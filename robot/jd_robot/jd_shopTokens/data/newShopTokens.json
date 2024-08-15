@@ -1,0 +1,430 @@
+{
+    "F8A8A69785E016CBDD94AECD856BEE22": {
+        "index": 1,
+        "venderId": 1000001302,
+        "shopName": "Lumi京东自营旗舰店",
+        "activityId": 12666633,
+        "startTime": 1722441600000,
+        "endTime": 1725033599000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 7,
+                "prize": [
+                    "20京豆（共3000份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 14,
+                "prize": [
+                    "优惠券（共3000份）",
+                    "500店铺积分（共3000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 7,
+        "maxLevel": 14
+    },
+    "5282853C8B47659965A71B38F8A687FB": {
+        "index": 2,
+        "venderId": 1000099083,
+        "shopName": "王老吉饮料京东自营旗舰店",
+        "activityId": 12659347,
+        "startTime": 1722441600000,
+        "endTime": 1725033599000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "10店铺积分（共100000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 3,
+                "prize": [
+                    "30店铺积分（共80000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 9,
+                "prize": [
+                    "50店铺积分（共30000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 15,
+                "prize": [
+                    "25京豆（共10000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 15
+    },
+    "1210735C4345F9469A3211E0D7FC33A1": {
+        "index": 3,
+        "venderId": 1000004550,
+        "shopName": "新星出版社京东自营官方旗舰店",
+        "activityId": 12645576,
+        "startTime": 1722441600000,
+        "endTime": 1725033599000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "10店铺积分（共10000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 30,
+                "prize": [
+                    "30京豆（共10000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 30
+    },
+    "71AE567DB6AABA1B3245359B4E63B89D": {
+        "index": 4,
+        "venderId": 1000104853,
+        "shopName": "掌昕鲜京东自营旗舰店",
+        "activityId": 12671985,
+        "startTime": 1722528000000,
+        "endTime": 1725119999000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 1,
+                "prize": [
+                    "5店铺积分（共10000份，已发完）",
+                    "1京豆（共10000份，已发完）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 2,
+                "prize": [
+                    "2京豆（共5000份）",
+                    "10店铺积分（共5000份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 5,
+                "prize": [
+                    "25店铺积分（共2000份）",
+                    "5京豆（共2000份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 10,
+                "prize": [
+                    "50店铺积分（共1000份）",
+                    "10京豆（共1000份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 20,
+                "prize": [
+                    "100店铺积分（共500份）",
+                    "20京豆（共500份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 1,
+        "maxLevel": 20
+    },
+    "111418D77D61B2F6DB9B43D7F7A9DF7C": {
+        "index": 5,
+        "venderId": 10336137,
+        "shopName": "Jamieson健美生海外旗舰店",
+        "activityId": 12672305,
+        "startTime": 1722528000000,
+        "endTime": 1725119999000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "10店铺积分（共999999份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 1,
+                "prize": [
+                    "10店铺积分（共999999份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 3,
+                "prize": [
+                    "50店铺积分（共999999份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 7,
+                "prize": [
+                    "10京豆（共9999份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 15,
+                "prize": [
+                    "200店铺积分（共999999份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 30,
+                "prize": [
+                    "100京豆（共999份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 30
+    },
+    "BF829E6F0AAEA200D7F773131412D6D8": {
+        "index": 6,
+        "venderId": 1000004550,
+        "shopName": "新星出版社京东自营官方旗舰店",
+        "activityId": 12679036,
+        "startTime": 1722873600000,
+        "endTime": 1725119999000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "10店铺积分（共10000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 26,
+                "prize": [
+                    "30京豆（共10000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 26
+    },
+    "E0FA388A28CBB23CA887EBD5B912DC27": {
+        "index": 7,
+        "venderId": 10619951,
+        "shopName": "国济堂旗舰店",
+        "activityId": 12681852,
+        "startTime": 1722960000000,
+        "endTime": 1725119999000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "20店铺积分（共100000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 2,
+                "prize": [
+                    "优惠券（共200000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 5,
+                "prize": [
+                    "5京豆（共1500份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 7,
+                "prize": [
+                    "优惠券（共5000份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 10,
+                "prize": [
+                    "优惠券（共5000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 10
+    },
+    "59983CE011C8FDB379CFC3D5912C84E9": {
+        "index": 8,
+        "venderId": 11971011,
+        "shopName": "集卡社旗舰店",
+        "activityId": 12685661,
+        "startTime": 1723046400000,
+        "endTime": 1725638399000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "5店铺积分（共10000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 1,
+                "prize": [
+                    "2京豆（共1000份，已发完）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 3,
+                "prize": [
+                    "5京豆（共900份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 7,
+                "prize": [
+                    "8京豆（共800份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 10,
+                "prize": [
+                    "12京豆（共700份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 10
+    },
+    "A9398E291B4A6F627DC7E19EB52A92D9": {
+        "index": 9,
+        "venderId": 1000004550,
+        "shopName": "新星出版社京东自营官方旗舰店",
+        "activityId": 12689103,
+        "startTime": 1723132800000,
+        "endTime": 1725119999000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "10店铺积分（共10000份）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 23,
+                "prize": [
+                    "30京豆（共1000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 23
+    },
+    "C89D2DE510F525469C23F3C6167ACE03": {
+        "index": 10,
+        "venderId": 95282,
+        "shopName": "ETCR官方旗舰店",
+        "activityId": 12687311,
+        "startTime": 1723132800000,
+        "endTime": 1723737599000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "1京豆（共20000份）"
+                ],
+                "havePrize": true
+            },
+            {
+                "days": 7,
+                "prize": [
+                    "10京豆（共1000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 7
+    },
+    "D00EA46256768FBE9047846685E6C87F": {
+        "index": 11,
+        "venderId": 1000470046,
+        "shopName": "美丽雅（MARYYA）清洁用品京东自营旗舰店",
+        "activityId": 12694882,
+        "startTime": 1723392000000,
+        "endTime": 1725897599000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 0,
+                "prize": [
+                    "2京豆（共10000份，已发完）"
+                ],
+                "havePrize": false
+            },
+            {
+                "days": 3,
+                "prize": [
+                    "10京豆（共1000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 0,
+        "maxLevel": 3
+    },
+    "ACFE7C56E84A366A477C055E00DC584C": {
+        "index": 12,
+        "venderId": 10009953,
+        "shopName": "全兴官方旗舰店",
+        "activityId": 12696873,
+        "startTime": 1723478400000,
+        "endTime": 1725119999000,
+        "isValid": true,
+        "rules": [
+            {
+                "days": 7,
+                "prize": [
+                    "100京豆（共1000份）"
+                ],
+                "havePrize": true
+            }
+        ],
+        "minLevel": 7,
+        "maxLevel": 7
+    }
+}

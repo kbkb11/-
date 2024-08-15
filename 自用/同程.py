@@ -1,3 +1,6 @@
+import random
+import time
+
 import requests
 
 
@@ -51,5 +54,101 @@ def sign_in():
         print('请求失败，状态码:', response.status_code)
 
 
+def queryCash():
+    # 生成当前时间的分钟数
+    current_time = time.strftime("%Y%m%d%H%M", time.localtime())
+
+    # JSON 数据
+    data = {
+        "appid": 2,
+        "appv": "6.6.9",
+        "plc": "10015",
+        "chid": "wxqbh5",
+        "sdkid": 4,
+        "oid": "o498X0YJuJPF2TYrtvObmBSTL8TU",
+        "brand": "microsoft",
+        "model": "microsoft",
+        "pixelRatio": 1.25,
+        "screenWidth": 400,
+        "screenHeight": 730,
+        "windowWidth": 400,
+        "windowHeight": 730,
+        "language": "zh_CN",
+        "version": "3.9.11",
+        "system": "Windows 10 x64",
+        "platform": "windows",
+        "fontSizeSetting": 15,
+        "SDKVersion": "3.5.3",
+        "uid": "uGBcYm7sEuvdWfiy/ioXuQ==",
+        "unionid": "ohmdTt9MIwNRt6-dovW91VCA-ANo",
+        "ecrd": "240000001768941595",
+        "_list": [
+            {
+                "logid": 126,
+                "sid": 1723545344607,
+                "pc": 7,
+                "sc": 1,
+                "pn": "/page/activetemplate/zqLite/index",
+                "pdc": 2000,
+                "ctg": "天天赚钱频道",
+                "ac": "点击",
+                "lb": "任务模块",
+                "vl": "^任务名称:成功浏览视频赚现金^按钮文案:待领奖^状态:聚合框^场景值:1256^",
+                "wxappScene": 1256,
+                "wallet": 1,
+                "refid": "2000140206",
+                "cliktime": current_time,
+                "isCareMode": 1
+            }
+        ]
+    }
+
+    # 生成一个六位随机数
+    random_number = f"{random.randint(199999, 999999):06d}"
+
+    # 组合 apmat 字段
+    apmat = f"o498X0YJuJPF2TYrtvObmBSTL8TU|{current_time}|{random_number}"
+
+    # 设置 headers
+    headers = {
+        "Host": "wx.17u.cn",
+        "Connection": "keep-alive",
+        "TCPrivacy": "1",
+        "apmat": apmat,
+        "TC-PLATFORM-CODE": "WX_MP",
+        "TC-USER-TOKEN": "ZfOeS2YX9IStsHx-3-C4uwNNYtkz6i-Ar8aPlJ4LAVerFGWfPRdVex1MIca04RKTQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLcRRVdAoGaxm1lwIgkrRVg61Q4UzwJPKu0kjIkolA_HXQPF64HreUi4JKJFGWWyJWO669vQwxXJ-ZKlWFCTQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLcsrQ**4641",
+        "TCReferer": "page%2Factivetemplate%2FzqLite%2Findex",
+        "Content-Type": "application/json",
+        "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/122.0.0.0 Safari/537.36 "
+                       "MicroMessenger/7.0.20.1781(0x6700143B) "
+                       "NetType/WIFI MiniProgramEnv/Windows "
+                       "WindowsWechat/WMPF WindowsWechat(0x63090b19)XWEB/11159"),
+        "xweb_xhr": "1",
+        "TCSecTk": "ZfOeS2YX9IStsHx-3-C4u7d-RjeVZMavk790gjBMj2AUgSfFWqieGJthimD7ic3BCSzc51i6TQ8419uEC2UaRX7itXEQBGMDPvrmRgnZLcm1lwIgkrRVg61Q4UzwJPKu0kjIkolA_HXQPF64HreUi4JKJFGWWyJWO669vQwxXJ-agGSRqsojSBCMRXpXVeaZO2x-t7WM3qe2Efyp6ZjZTw**4641",
+        "TC-OS-TYPE": "0",
+        "TCxcxVersion": "6.6.9",
+        "Accept": "*/*",
+        "Sec-Fetch-Site": "cross-site",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Dest": "empty",
+        "Referer": "https://servicewechat.com/wx336dcaf6a1ecf632/659/page-frame.html",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "zh-CN,zh;q=0.9"
+    }
+
+    # 发送 GET 请求
+    url = "https://wx.17u.cn/platformflowpool/assets/home"
+    # 发送 POST 请求
+    response = requests.post(url, headers=headers, json=data)
+
+    # 输出响应
+    print(response)
+    print(response.status_code)
+    print(response.text)
+
+
 if __name__ == '__main__':
-    sign_in()
+    # sign_in()
+    queryCash()
